@@ -8,7 +8,10 @@
     --color-dark: #131d0d;
     --color-bg: #04152d;
 
-    --font-robot: 'Roboto', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-space: 'Space Mono', sans-serif;
+    --font-nunito: 'Nunito', sans-serif;
 
 }
 
