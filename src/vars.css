@@ -1,17 +1,26 @@
 :root {
     --color-text:#fff;
-    --color-primary: #0a3d62;
-    --color-secondary: #052029;
-    --color-tertiary: #287b8b;
-    --color-light: #cef0e7;
+    --color-text2:#ebeeed;
 
-    --color-dark: #131d0d;
-    --color-bg: #04152d;
+    --color-accent1: #fadd3b;
+    --color-accent2: #00cdcd;
+    --color-accent3: #009acd;
+    --color-accent: #ff0000;
+    --color-accent4: #ff0000;
+    --color-accent5: #c80815;
+    --color-accent6: #009acd;
 
-    --font-inter: 'Inter', sans-serif;
+    --color-bg1: #1c1c1c;
+
+    --color-dark: #030303;
+
+    --font-outfit: 'Outfit', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
-    --font-space: 'Space Mono', sans-serif;
-    --font-nunito: 'Nunito', sans-serif;
-
+    --font-sans: 'Open-Sans', sans-serif;
+    --font-alegreya: 'Alegreya', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-barlow: 'Barlow-Condensed', sans-serif;
+    --font-oswald: 'Oswald', sans-serif;
+    
 }
 
