@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-    <a className={styles.title} href='/'>Home</a>
+    <a className={styles.home} href='/'>Home</a>
     <div className={styles.menu}>
 
         <img className={styles.menuIcon} 
@@ -27,8 +27,9 @@ export const Navbar = () => {
             <li>
                 <a href='#Contact'>Contact</a>
             </li>
+            <button className={styles.cvBtn}>Download CV</button> 
         </ul>
-        
+       
     </div>
     </nav>
   );
