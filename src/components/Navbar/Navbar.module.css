@@ -8,13 +8,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    background-color: var(--color-dark2);
+    background-color: var(--color-dark);
 }
 
 .home {
     font-size: 1.4rem;
     font-weight: 600;
-    color: whitesmoke;
     text-decoration: none;
 }
 
@@ -36,19 +35,18 @@
 .menuItems a {
     font-size:1.4rem;
     font-weight: 600;
-    color: whitesmoke;
     text-decoration: none;
 }
 
 .cvBtn {
     font-size: 1rem;
     font-weight: 600;
-    background-color: whitesmoke;
-    color: var(--color-bg1);
-    padding: 0.2rem;
+    padding-right: 0.3rem; 
+    padding-left: 0.3rem;
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
+    background-color: transparent;
 }
 
 
@@ -75,7 +73,6 @@
         align-items: flex-end;
         gap: 0.5rem;
         z-index: 3;
-        background-color: transparent;
     }
 
     .menuIcon {
@@ -87,7 +84,6 @@
         display: none;
         flex-direction: column;
         align-items: center;
-        background-color: transparent;
         gap: 0.5rem;
     }
 

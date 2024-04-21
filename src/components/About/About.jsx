@@ -7,7 +7,7 @@ import { getImageUrl } from '../../utils'
 
 export const About = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='about'>
         <div className={styles.text}>
            <h2 className={styles.title}>About me</h2>   
             <p className={styles.paragraph}>

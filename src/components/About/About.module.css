@@ -7,6 +7,7 @@
     z-index: 1;
     padding: 3rem;
     min-height: 60rem;
+    background-color: var(--color-dark);
 }
 
 
@@ -25,7 +26,6 @@
     align-items: left;
     justify-content: center;
     z-index: 1;
-    color: white;
 }
 
 .title {
