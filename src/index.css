@@ -5,7 +5,6 @@
     font-family: var(--font-roboto);
     color: var(--color-text);
     line-height: 1.8rem;
-    background-color: var(--color-bg3);
 }
 
 html {
