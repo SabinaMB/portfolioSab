@@ -9,7 +9,7 @@ export const Hero = () => {
           <p className={styles.paragraph}>I'm</p>
           <h2 className={styles.title}>Sabina, web & app developer</h2>
           <p className={styles.paragraph}>Delighted to make your acquaintance</p>
-          <button className={styles.aboutBtn} style={{marginTop: '1.5rem'}}>About me</button>
+          <button className={styles.aboutBtn}>Get to know me</button>
         </div>
     </section>
   )
