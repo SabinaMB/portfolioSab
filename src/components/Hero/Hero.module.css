@@ -27,20 +27,19 @@
     z-index: 1;
     color: white;
     background-color: transparent;
+    gap: 2rem;
 }
 
 .title {
     font-size: clamp(1.5rem, 7vw, 2.5rem);
     font-weight: 700;
     font-family: var(--font-oswald);
-    margin-bottom: 1.5rem;
 }
 
 .paragraph {
     font-size: clamp(1.2rem, 6vw, 1.5rem);
     font-weight: 500;
     font-family: var(--font-roboto);
-    margin-bottom: 1.5rem;
     
 }
 

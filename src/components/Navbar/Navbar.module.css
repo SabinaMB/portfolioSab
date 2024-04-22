@@ -12,7 +12,7 @@
 }
 
 .home {
-    font-size: clamp(0.8rem, 2vw, 1.4rem);
+    font-size: clamp(1rem, 3vw, 1.4rem);
     font-weight: 600;
     text-decoration: none;
 }
@@ -29,11 +29,13 @@
     display: flex;
     gap: 2rem;
     list-style: none;
-    
+    background-image: linear-gradient(to top, rgba(7, 22, 31, 0.9), rgba(51, 51, 51, 0.9));
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    border-radius: 20px;
 }
 
 .menuItems a {
-    font-size: clamp(0.8rem, 2vw, 1.4rem);
+    font-size: clamp(1rem, 3vw, 1.4rem);
     font-weight: 600;
     text-decoration: none;
 }
@@ -60,9 +62,9 @@
     }
 
     .menu {
-        position:absolute;
+        position: absolute;
         right: 0;
-        margin-right: 10%;
+        margin-right: 5%;
         flex-direction: column;
         align-items: flex-end;
         gap: 0.5rem;
