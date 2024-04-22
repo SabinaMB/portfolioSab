@@ -3,21 +3,10 @@
     display: flex;
     flex-direction:row;
     align-items: center;
-    justify-content: space-between;
     z-index: 1;
-    padding: 3rem;
+    padding: 2rem;
     min-height: 60rem;
     background-color: var(--color-dark);
-}
-
-
-.image {
-    position: relative;
-    width: 20rem;
-    overflow: hidden;
-    height: auto;
-    margin: 4rem;
-    
 }
 
 .content {
@@ -26,23 +15,38 @@
     align-items: left;
     justify-content: center;
     z-index: 1;
+    margin-bottom: 4rem;
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 6vw, 2.5rem);
     font-weight: 700;
     font-family: var(--font-oswald);
     margin-bottom: 2rem;
 }
 
 .paragraph {
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 5vw, 1.5rem);
     font-weight: 500;
     font-family: var(--font-roboto);
     margin-bottom: 1rem;
     line-height: 2rem;
 }
 
+.image {
+    position: relative;
+    width: clamp(15rem, 30vw, 20rem);
+    overflow: hidden;
+    height: auto;
+    margin: clamp(0.5rem, 5vw, 2rem);
+}
 
+@media screen and (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        min-height: 100vh;
+    }
 
-
+}

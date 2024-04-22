@@ -24,9 +24,9 @@ export const About = () => {
             </p>
         </div>
       
-        <div className={styles.image}>
+        <figure className={styles.image}>
         <img src={getImageUrl('imgSab.jpg')} alt="Sabina" className={styles.image}/>    
-        </div>
+        </figure>
         
     </section>
   )

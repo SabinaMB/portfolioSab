@@ -3,7 +3,7 @@
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensure the navbar is above other content */
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,7 +12,7 @@
 }
 
 .home {
-    font-size: 1.4rem;
+    font-size: clamp(0.8rem, 2vw, 1.4rem);
     font-weight: 600;
     text-decoration: none;
 }
@@ -33,13 +33,13 @@
 }
 
 .menuItems a {
-    font-size:1.4rem;
+    font-size: clamp(0.8rem, 2vw, 1.4rem);
     font-weight: 600;
     text-decoration: none;
 }
 
 .cvBtn {
-    font-size: 1rem;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
     font-weight: 600;
     padding-right: 0.3rem; 
     padding-left: 0.3rem;
@@ -52,13 +52,7 @@
 
 @media screen and (max-width: 780px) {
     
-    .home {
-        font-size: 1.2rem;
-    }
-
-    .menuItems a {
-        font-size: 1.2rem;
-    }
+    
 
     .navbar {
         flex-direction: column;
