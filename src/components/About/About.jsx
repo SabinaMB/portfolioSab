@@ -10,8 +10,7 @@ export const About = () => {
     <section className={styles.container} id='about'>
          
         <h2 className={styles.title}>
-          <span>About</span>
-          <span>me</span>
+         About me
         </h2> 
 
         <div className={styles.text}>

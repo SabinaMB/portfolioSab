@@ -16,15 +16,14 @@
 .title {
     display: flex;
     flex-direction: column;
-}
-
-.title span {
     grid-area: title;
     margin:0.5rem;
     font-size: clamp(1.5rem, 6vw, 2.5rem);
     font-weight: 700;
     font-family: var(--font-oswald);
     color: var(--color-accent4);
+    writing-mode: vertical-rl;
+    transform:scale(-1);
 }
 
 
@@ -67,11 +66,10 @@
     }
 
     .title {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .title span {
+        writing-mode: horizontal-tb;
+        writing-mode: horizontal;
+        text-orientation: sideways;
+        transform: none;
         text-align: center; 
         margin: 0.2rem;}
 }
