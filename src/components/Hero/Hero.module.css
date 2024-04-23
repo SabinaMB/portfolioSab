@@ -36,6 +36,7 @@
     font-family: var(--font-oswald);
 }
 
+
 .paragraph {
     font-size: clamp(1.2rem, 6vw, 1.5rem);
     font-weight: 500;
@@ -47,12 +48,16 @@
     font-size: clamp(1rem, 6vw, 1.5rem);
     font-family: var(--font-oswald);
     font-weight: 600;
-    background-color: var(--color-accent4);
+    background-color: transparent;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     cursor: pointer;
-    transition: all 0.3s ease;
     margin: 0 auto;
+}
+
+.aboutBtn:hover {
+    color: var(--color-accent4);
+    transition: color 0.5s;
 }
 
 .image img {

@@ -24,7 +24,7 @@ export const Hero = () => {
       if (anim) {
         anim.stop();
       }
-    }, 8000);
+    }, 10000);
 
    
     return () => {
@@ -44,8 +44,10 @@ const scrollToAbout = () => {
     <section className={styles.container} style={{backgroundImage: `url(${getImageUrl('hero1.jpeg')})`}}>
         <div className={styles.content}>
           <p className={styles.paragraph}>I'm</p>
-          <h2 className={styles.title}>Sabina, web & app developer</h2>
-          <p className={styles.paragraph}>Delighted to make your acquaintance</p>
+          <h2 className={styles.title}>
+            <span className={styles.title} style={{ color: 'var(--color-accent4)' }}>Sabina</span>, web developer</h2>
+         <p className={styles.paragraph}>My objective: crafting captivating web experiences</p>
+         {/*  <p className={styles.paragraph}>Delighted to make your acquaintance</p> */}
           <button className={styles.aboutBtn} onClick={scrollToAbout}>Get to know me</button>
         </div>
       <div ref={containerRef} className={styles.lottieContainer}></div>
