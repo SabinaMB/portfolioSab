@@ -7,7 +7,7 @@ import lottie from 'lottie-web'
 
 export const Hero = () => {
 
-  const containerRef = useRef();
+  /* const containerRef = useRef();
   const aboutRef= useRef();
   let anim = null;
 
@@ -33,7 +33,7 @@ export const Hero = () => {
       }
       clearTimeout(timeoutId);
     };
-  }, []);
+  }, []); */
 
 const scrollToAbout = () => {
   const aboutSection = document.getElementById('about');
@@ -50,7 +50,7 @@ const scrollToAbout = () => {
          {/*  <p className={styles.paragraph}>Delighted to make your acquaintance</p> */}
           <button className={styles.aboutBtn} onClick={scrollToAbout}>Get to know me</button>
         </div>
-      <div ref={containerRef} className={styles.lottieContainer}></div>
+      {/*<div ref={containerRef} className={styles.lottieContainer}></div>*/}
     </section>
   )
 }
