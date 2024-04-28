@@ -9,8 +9,8 @@ export const About = () => {
   return (
     <section className={styles.container} id='about'>
          
-        <div className={styles.title}>
-         <p className={styles.titleAbout}>About me</p>
+        <div>
+         <p className={styles.title}>About me</p>
         </div> 
 
         <div className={styles.path}>
@@ -32,7 +32,7 @@ export const About = () => {
         </div>
         
         <figure className={styles.image}>
-        <img src={getImageUrl('imgSab.jpg')} alt="Sabina" className={styles.image}/>    
+        <img src={getImageUrl('imgSab8.jpg')} alt="Sabina" className={styles.image}/>    
         </figure>
     </section>
   )

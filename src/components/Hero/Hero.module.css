@@ -18,6 +18,33 @@
     min-height: 100vh;
 }
 
+.header {
+  display:flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  gap: 1rem;
+  font-weight: 700;
+  font-family: var(--font-oswald);
+}
+
+.logo {
+  width: 100px;
+  height:100px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 2rem;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.25rem;
+  font-family: var(--font-oswald);
+  letter-spacing: 0.1rem;
+}
 
 .content {
     display: flex;
@@ -25,10 +52,10 @@
     align-items: left;
     justify-content: center;
     z-index: 1;
-    color: white;
     background-color: transparent;
     gap: 1rem;
 }
+
 
 .title {
     font-size: clamp(1.5rem, 7vw, 2.5rem);
@@ -69,20 +96,7 @@
 
 }
 
-.lottieContainer svg path{
-  fill: white;
-  margin: 1rem;
-  padding: 2rem;
-}
 
-.lottieContainer {
-  transform: scaleY(-1);
-}
-
-.lottieContainer > div {
-  width: 100%;
-  height: auto;
-} 
 
 @media screen and (max-width: 450px) {
     .container {

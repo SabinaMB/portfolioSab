@@ -11,11 +11,11 @@
         'title path image'
         'title bootCamp image'
         '. bootCamp goals';
-    min-height: 80vh;
+    min-height: 100vh;
     
 }
 
-.titleAbout {
+.title {
     grid-area: title;
     margin:0.5rem;
     font-size: clamp(1.2rem, 4vw, 2rem);
@@ -42,7 +42,7 @@
 
 .bootCamp {
     grid-area: bootCamp;
-    font-size: clamp(0.8rem, 4vw, 1.5rem);
+    font-size: clamp(0.8rem, 4vw, 1.25rem);
     font-family: var(--font-oswald);
     width: 100%;
     height: 100%;

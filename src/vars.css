@@ -1,6 +1,7 @@
 :root {
-    --color-text:white;
+    --color-text:whitesmoke;
     --color-text2: rgb(230, 225, 225);
+    --color-text3: rgb(241, 211, 211);
 
     --color-accent1: #fadd3b;
     --color-accent2: #00cdcd;
@@ -16,10 +17,8 @@
 
     --color-dark: #07161f;
     --color-light: #f0c9c9;
-    
 
    
-
     --font-outfit: 'Outfit', sans-serif;
     --font-roboto: 'Roboto', sans-serif;
     --font-sans: 'Open-Sans', sans-serif;
