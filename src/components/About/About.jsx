@@ -17,10 +17,10 @@ export const About = () => {
 
         <div className={styles.path}>
             <p className={styles.path_p}>
-            As an avid Web Developer and Backend Explorer, my journey has been shaped by a rich background in Project Management, QualityAssurance, and Communication.
+            As an avid Web Developer and Backend Explorer, my journey has been shaped by a rich background in Project Management, Quality Assurance and Communication. 
             </p>
             <p className={styles.path_p}>
-            Coordinating the admission of foreign students, managing QA projects, organizing international conferences, and engaging in product development equipped me with a unique blend of organizational and technical expertise.
+             Coordinating the admission of foreign students, managing QA projects, organizing international conferences and engaging in product development equipped me with a unique blend of organizational and technical expertise.
             </p>
         </div>
         
@@ -38,7 +38,7 @@ export const About = () => {
               During this course, I collaborated with a diverse group of fellow students on coding challenges and projects, fostering a dynamic and collaborative learning environment.
             </p>
             <p className={styles.bootCamp_p}>
-              Notably, I actively contributed to the development of 'Scan & Serve,' an innovative restaurant management app. This project not only demonstrated my adaptability and teamwork but also showcased my problem-solving skills in a real-world development setting.
+              Notably, I actively contributed to the development of 'Scan & Serve', an innovative restaurant management app. This project not only demonstrated my adaptability and teamwork but also showcased my problem-solving skills in a real-world development setting.
             </p>
         </div>
 
@@ -47,7 +47,7 @@ export const About = () => {
           Long-term Goals:
           </p>
           <p className={styles.goals_p}>
-          Looking ahead, my goal is to seamlessly merge my diverse background with my newfound web development skills. 
+          Looking ahead, my goal is to seamlessly merge my diverse background with my web development skills. 
           </p>
           <p className={styles.goals_p}>
           I aspire to contribute to innovative projects, leveraging my technical expertise and organizational prowess. 

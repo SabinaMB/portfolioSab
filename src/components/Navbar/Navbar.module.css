@@ -11,10 +11,26 @@
     background-color: var(--color-dark);
 }
 
-.home {
+.navLink {
     font-size: clamp(1rem, 3vw, 1.4rem);
     font-weight: 600;
     text-decoration: none;
+    position: relative;
+}
+
+.navLink::after {
+    content: "";
+    position: absolute;
+    left: 0;
+     bottom: -2px;
+    height: 2px;
+    background-color: white;
+    width:0;
+    transition: width 0.5s ease;
+}
+
+.navLink:hover::after {
+    width: 100%;
 }
 
 .menuIcon {
@@ -33,11 +49,6 @@
     border-radius: 20px;
 }
 
-.menuItems a {
-    font-size: clamp(1rem, 3vw, 1.4rem);
-    font-weight: 600;
-    text-decoration: none;
-}
 
 .cvBtn {
     font-size: clamp(1rem, 1.5vw, 1.2rem);
@@ -60,8 +71,6 @@
 
 @media screen and (max-width: 780px) {
     
-    
-
     .navbar {
         flex-direction: column;
         align-items: flex-start;
