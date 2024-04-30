@@ -1,11 +1,45 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import styles from './About.module.css';
 import { getImageUrl } from '../../utils'
 
+import animation from '../../../assets/scroll.json'
+import lottie from 'lottie-web'
 
 
 
 export const About = () => {
+
+  const containerRef = useRef();
+  const aboutRef= useRef();
+  let anim = null;
+
+  useEffect(() => {
+    const anim = lottie.loadAnimation({
+      container: containerRef.current,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      animationData: animation,
+    });
+
+    const timeoutId = setTimeout(() => {
+      if (anim) {
+        anim.stop();
+      }
+    }, 10000);
+
+   
+    return () => {
+      if (anim) {
+        anim.destroy();
+      }
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
+
+
+
   return (
 
     <div className={styles.aboutWrapper} id='about'>
@@ -14,6 +48,11 @@ export const About = () => {
         <div className={styles.titleContainer}>
          <p className={styles.title}>About me</p>
         </div> 
+
+        <div className={styles.lottieWrapper}>
+        <div ref={containerRef} className={styles.lottieContainer}>
+          </div>
+        </div>
 
         <div className={styles.path}>
             <p className={styles.path_p}>

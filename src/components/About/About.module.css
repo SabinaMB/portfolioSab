@@ -18,17 +18,18 @@
     grid-template-rows: min-content 1fr min-content;
     grid-template-areas: 
         'title path image'
-        '. bootCamp image'
+        'lottieContainer bootCamp image'
         '. bootCamp goals';
     max-width: 1500px;
 }
 
 .titleContainer {
+    grid-area: title;
     display: flex;
     align-items: center;
 }
+
 .title {
-    grid-area: title;
     margin:0.5rem;
     /* font-size: clamp(1.2rem, 4vw, 2rem); */
     font-size: 3ch;
@@ -56,6 +57,21 @@
     height: 100%;
     color: var(--color-text2);
 }
+
+.lottieWrapper {
+    grid-area: lottieContainer;
+    display: grid;
+    position: relative;
+    height: 150%;
+    width: 100%;
+    justify-items: center;
+}
+
+.lottieContainer svg path{
+    fill: var(--color-accent4);
+  }
+  
+ 
 
 .bootCamp {
     grid-area: bootCamp;
@@ -131,8 +147,12 @@
         writing-mode: horizontal;
         text-orientation: sideways;
         transform: none;
-        text-align: center; 
         margin: 0.2rem;
+    }
+
+    .titleContainer {
+        display: flex;
+        justify-content: center;
     }
 } 
 
@@ -141,7 +161,7 @@
     .container {
         grid-template-areas: 
             'title path path'
-            '. bootCamp image'
+            'lottieContainer bootCamp image'
             '. bootCamp goals';
     }
 

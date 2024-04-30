@@ -1,6 +1,7 @@
-import React, { useRef, useEffect } from 'react'
+import React from 'react'
 import { getImageUrl } from '../../utils'
 import styles from './Hero.module.css'
+
 
 
 export const Hero = () => {
@@ -24,6 +25,7 @@ const scrollToAbout = () => {
          <p className={styles.paragraph}>My objective: crafting captivating web experiences</p>
           <button className={styles.aboutBtn} onClick={scrollToAbout}>Get to know me</button>
         </div>
+      
     </section>
   )
 }
