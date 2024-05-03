@@ -50,8 +50,7 @@ export const About = () => {
         </div> 
 
         <div className={styles.lottieWrapper}>
-        <div ref={containerRef} className={styles.lottieContainer}>
-          </div>
+        <div ref={containerRef} className={styles.lottieContainer}></div>
         </div>
 
         <div className={styles.path}>
@@ -68,25 +67,19 @@ export const About = () => {
             Development Journey:
             </p>
             <p className={styles.bootCamp_p}>
-              Embarking on my coding odyssey, I underwent an intensive Full Stack Web and App Development course from October 2023 to February 2024 at WBS CODING SCHOOL, Berlin.
+            During my 15-week Full Stack Web and App Development course at WBS CODING SCHOOL in Berlin from October 2023 to February 2024, I delved deep into PERN and MERN stack applications. 
             </p>
             <p className={styles.bootCamp_p}>
-              Exploring HTML, CSS, JS, React, and Node.js, I gained practical experience through real project implementations, showcasing comprehensive knowledge of front-end and back-end development.
+            Collaborating weekly on coding challenges and completing 14 projects sharpened my skills, while also familiarizing me with Agile methodologies and Scrum practices.
             </p>
             <p className={styles.bootCamp_p}>
-              During this course, I collaborated with a diverse group of fellow students on coding challenges and projects, fostering a dynamic and collaborative learning environment.
-            </p>
-            <p className={styles.bootCamp_p}>
-              Notably, I actively contributed to the development of 'Scan & Serve', an innovative restaurant management app. This project not only demonstrated my adaptability and teamwork but also showcased my problem-solving skills in a real-world development setting.
+            In our final project I actively contributed in a four-member team to the development of 'Scan & Serve', a restaurant management app. This experience allowed me to showcase my adaptability and problem-solving abilities in a real-world setting. 
             </p>
         </div>
 
         <div className={styles.goals}>
           <p className={styles.goals_p}>
           Long-term Goals:
-          </p>
-          <p className={styles.goals_p}>
-          Looking ahead, my goal is to seamlessly merge my diverse background with my web development skills. 
           </p>
           <p className={styles.goals_p}>
           I aspire to contribute to innovative projects, leveraging my technical expertise and organizational prowess. 

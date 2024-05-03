@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
 }
 
 .container {
@@ -31,7 +30,6 @@
 
 .title {
     margin:0.5rem;
-    /* font-size: clamp(1.2rem, 4vw, 2rem); */
     font-size: 3ch;
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -47,7 +45,8 @@
     width: 100%;
     height: 100%;
     justify-content: center;
-    text-align: justify;
+    text-wrap: pretty;
+    hyphens: auto;
     color: var(--color-text2);
     margin-bottom: 2rem;
 }
@@ -64,35 +63,36 @@
     position: relative;
     height: 150%;
     width: 100%;
-    justify-items: center;
+    justify-items: flex-start;
 }
 
 .lottieContainer svg path{
     fill: var(--color-accent4);
   }
-  
- 
 
 .bootCamp {
     grid-area: bootCamp;
     display: grid;
     width: 100%;
     height: 100%;
-    gap: 1.2rem; 
     align-items: center;
     justify-items: center;   
 }
 
 .bootCamp_p {
-    /* font-size: clamp(0.8rem, 4vh, 1.5rem); */
     font-family: var(--font-oswald);
     font-size: 2.2ch;
     line-height: 2rem;
-    letter-spacing: 0.02rem;
-    text-align: justify;
-    width: 90%;
+    letter-spacing: 0.01rem;
+    text-wrap: pretty;
+    hyphens: auto;
+    width: 100%;
     height: 100%;
     color: whitesmoke;
+}
+
+.span {
+    color: var(--color-accent4);
 }
 
 .image {
@@ -111,7 +111,6 @@
     border: solid 3px whitesmoke;
 }
 
-
 .goals {
     grid-area: goals;
     display: grid;
@@ -122,14 +121,16 @@
 }
 
 .goals_p {
-    width: 65%;
+    width: 85%;
     height: 100%;
     text-align: justify;
+    hyphens: auto;
     color: var(--color-text2);
     
 }
 
  @media screen and (max-width: 700px) {
+    
     .container {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -140,6 +141,15 @@
             'goals';
         min-height: auto;
         line-height: 1.5rem;
+        column-gap: 0;
+    }
+
+    .goals_p {
+        width: 100%;
+    }
+
+    .lottieContainer {
+        display: none;
     }
 
     .title {
