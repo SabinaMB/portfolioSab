@@ -22,13 +22,13 @@ export const Navbar = () => {
                 <a href='#about' className={styles.navLink}>About</a>
             </li>
             <li>
-                <a href='#Skills' className={styles.navLink}>Skills</a>
+                <a href='#skills' className={styles.navLink}>Skills</a>
             </li>
             <li>
-                <a href='#Projects' className={styles.navLink}>Projects</a>
+                <a href='#projects' className={styles.navLink}>Projects</a>
             </li>
             <li>
-                <a href='#Contact' className={styles.navLink}>Contact</a>
+                <a href='#contact' className={styles.navLink}>Contact</a>
             </li>
             <button className={styles.cvBtn}>Download CV</button> 
         </ul>

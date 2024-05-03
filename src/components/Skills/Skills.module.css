@@ -1,0 +1,5 @@
+.container {
+    display: grid;
+    background-color: var(--color-dark);
+    min-width: 100vh;
+}
