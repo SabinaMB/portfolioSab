@@ -17,14 +17,34 @@
         'techSkills experience'
         'otherSkills education'
         'hobbies education';
+    max-width: 1500px;
+
+
 }
 
 .techSkills {
+    display:grid;
     grid-area: techSkills;
+    background-color: var(--color-card);
+}
+
+.iconsContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-self: center;
+    justify-items: center;
+}
+
+.skillIcon {
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5rem;
+
 }
 
 .experience {
     grid-area: experience;
+    align-self: flex-start;
 }
 
 .otherSkills {
@@ -37,4 +57,19 @@
 
 .hobbies {
     grid-area: hobbies;
+}
+
+.ul {
+    list-style-type: circle;
+    margin: 0.5rem;
+}
+
+.title {
+    align-self: center;
+    justify-self: center;
+    margin:0.5rem;
+    font-size: 2.5ch;
+    font-weight: 500;
+    font-family: var(--font-oswald);
+    color: var(--color-accent4);
 }

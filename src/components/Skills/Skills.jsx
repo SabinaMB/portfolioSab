@@ -7,8 +7,10 @@ import skills from '../../data/skills.json';
 export const Skills = () => {
   return (
     <section className={styles.container} id='skills'>    
+        
         <div className={styles.techSkills}>
         <h2 className={styles.title}>Technical skills</h2>
+        <div className={styles.iconsContainer}>
             {
             skills.map((skill, id) => {
                 let IconComponent;
@@ -26,13 +28,16 @@ export const Skills = () => {
             })
         }
         </div>
+        </div>
 
         <div className={styles.otherSkills}>
         <h2 className={styles.title}>Additional skills</h2>
+            <ul className={styles.ul}>
             <li>Project management</li>
             <li>Quality assurance</li>
             <li>Communication</li>
             <li>Research</li>
+            </ul>
         </div>
 
         <div className={styles.experience}>
@@ -41,7 +46,7 @@ export const Skills = () => {
             <p className={styles.company}>Technical University "Gheorghe Asachi“, Iasi, Romania</p>
             <p className={styles.position}>Secretary</p>
             <p className={styles.date}>September 2004 - April 2016</p>
-            <ul>
+            <ul className={styles.ul}>
                 <li>Coordinated foreign student affairs and managed five admission processes.</li>
                 <li>Provided administrative support for the university's managerial control system.</li>
                 <li>Developed and implemented teaching quality management systems.</li>
@@ -51,7 +56,7 @@ export const Skills = () => {
             <p className={styles.company}>S.C. Adesgo S.A., Bucharest, Romania</p>
             <p className={styles.position}>Engineer</p>
             <p className={styles.date}>July 2002 - August 2004</p>
-            <ul>
+            <ul className={styles.ul}>
                 <li>Led product development and oversaw prototype testing.</li>
                 <li>Managed production processes to ensure consistent quality.</li>
             </ul>
@@ -64,7 +69,7 @@ export const Skills = () => {
         <p className={styles.institution}>WBS CODING SCHOOL, Berlin</p>
         <p className={styles.date}>October 2023 - February 2024</p>
         <p className={styles.name}>Full Stack Web and App Development course</p>
-        <ul>
+        <ul className={styles.ul}>
             <li>Intensive full stack web development bootcamp covering HTML, CSS, JavaScript, React, Node.js with a focus on project-based, team-oriented and agile methodologies.</li>
             <li>Final project: collaborated within a team to develop 'Scan & Serve', a groundbreaking restaurant management app. Contributed to the creation of features such as user-friendly menu management, virtual table setup with QR codes, and real-time order tracking using Socket.IO. Demonstrated teamwork, problem-solving and coding skills throughout the project.</li>
         </ul>
@@ -72,7 +77,7 @@ export const Skills = () => {
         <p className={styles.date}>September 2002 - July 2003</p>
         <p className={styles.degree}>Master's degree</p>
         <p className={styles.name}>Specialization: Computer-aided Design and Manufacturing</p>
-        <ul>
+        <ul className={styles.ul}>
             <li>Proficient in modern integrated manufacturing systems.</li>
             <li>Skilled in implementing and managing quality assurance systems.</li>
             <li>Utilizing computer-aided experimental research techniques for performance enhancement.</li>
@@ -81,7 +86,7 @@ export const Skills = () => {
         <p className={styles.date}>September 1997 - July 2002</p>
         <p className={styles.degree}>Bachelor's degree</p>
         <p className={styles.name}>Specialization: Garments-Knitwear</p>
-        <ul>
+        <ul className={styles.ul}>
             <li>Knowledgeable in physical and chemical fiber properties.</li>
             <li>Proficient in textile structures, machine mechanisms, and material resistance.</li>
             <li>Expertise in comfort, functionality, and design of clothing products.</li>
@@ -91,7 +96,7 @@ export const Skills = () => {
         </div>
         <div className={styles.hobbies}>
         <h2 className={styles.title}>Interests and Hobbies</h2>
-            <ul>
+            <ul className={styles.ul}>
             <li>Avid reader with a creative and empathetic approach to problem-solving.</li>
             <li>Inspired by imaginative worlds in literature, applying innovative thinking to daily tasks.</li>
             <li>Fascination for history, the universe and neuroscience, providing valuable perspectives for problem-solving.</li>
