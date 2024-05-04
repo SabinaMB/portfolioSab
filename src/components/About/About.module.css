@@ -1,17 +1,16 @@
+@import '../../vars.css';
 
-.aboutWrapper {
-    background-color: var(--color-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .container {
     display: grid;
+    align-items: center;
+    justify-content: center;
     grid-gap: 2rem;
-     z-index: 1;
+    z-index: 1;
     padding: 2rem;
     margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--color-dark);
     grid-template-columns: min-content 1fr 1fr;
     grid-template-rows: min-content 1fr min-content;

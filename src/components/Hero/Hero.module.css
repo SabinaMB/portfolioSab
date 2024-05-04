@@ -16,6 +16,7 @@
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
+    
 }
 
 .header {
@@ -28,6 +29,7 @@
   gap: 1rem;
   font-weight: 700;
   font-family: var(--font-oswald);
+  
 }
 
 .logo {

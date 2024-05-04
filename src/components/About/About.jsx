@@ -42,8 +42,7 @@ export const About = () => {
 
   return (
 
-    <div className={styles.aboutWrapper} id='about'>
-    <section className={styles.container}>
+    <section className={styles.container} id='about'>
          
         <div className={styles.titleContainer}>
          <p className={styles.title}>About me</p>
@@ -94,6 +93,5 @@ export const About = () => {
         </figure>
 
     </section>
-  </div>
   )
 }

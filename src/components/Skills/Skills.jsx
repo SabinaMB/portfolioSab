@@ -6,7 +6,7 @@ import skills from '../../data/skills.json';
 
 export const Skills = () => {
   return (
-    <section className={styles.container} id='skills'>
+    <section className={styles.container} id='skills'>    
         <div className={styles.techSkills}>
         <h2 className={styles.title}>Technical skills</h2>
             {
@@ -89,9 +89,7 @@ export const Skills = () => {
         </ul>
         </ul>
         </div>
-        <p>Read more details in my <a href=''>CV</a>.</p>
-        
-        <div className='hobbies'>
+        <div className={styles.hobbies}>
         <h2 className={styles.title}>Interests and Hobbies</h2>
             <ul>
             <li>Avid reader with a creative and empathetic approach to problem-solving.</li>
