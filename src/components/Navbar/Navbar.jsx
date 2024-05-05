@@ -7,6 +7,7 @@ export const Navbar = () => {
     const [menuOpen, setMenuOpen] =useState(false);
 
   return (
+    <div className={styles.navWrapper}>
     <nav className={styles.navbar}>
     <a className={styles.navLink} href='/'>Home</a>
     <div className={styles.menu}>
@@ -35,6 +36,7 @@ export const Navbar = () => {
        
     </div>
     </nav>
+    </div>
   );
 };
 

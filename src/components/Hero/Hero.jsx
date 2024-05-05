@@ -12,7 +12,8 @@ const scrollToAbout = () => {
 };
 
   return (
-    <section className={styles.container} style={{backgroundImage: `url(${getImageUrl('hero1.jpeg')})`}}>
+    <div className={styles.heroWrapper} style={{backgroundImage: `url(${getImageUrl('hero1.jpeg')})`}} >
+    <section className={styles.container} /* style={{backgroundImage: `url(${getImageUrl('hero1.jpeg')})`}} */>
         <div className={styles.header}>
             <img src={getImageUrl('imgSab14.jpg')} alt="Sabina" className={styles.logo} />  
             <p className={styles.name}>Sabina Marian - Blanariu</p>
@@ -27,5 +28,6 @@ const scrollToAbout = () => {
         </div>
       
     </section>
+    </div>
   )
 }

@@ -1,14 +1,19 @@
 @import '../../vars.css';
 
-.navbar {
+
+.navWrapper {
+    background-color: var(--color-dark);
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    background-color: var(--color-dark);
+    margin: 0 auto;
+    max-width: 1500px;
 }
 
 .navLink {
