@@ -6,7 +6,8 @@ import skills from '../../data/skills.json';
 
 export const Skills = () => {
   return (
-    <section className={styles.container} id='skills'>    
+    <div className={styles.skillsWrapper} id='skills'>
+    <section className={styles.container} >    
         
         <div className={styles.techSkills}>
         <h2 className={styles.title}>Technical skills</h2>
@@ -19,9 +20,9 @@ export const Skills = () => {
                 } else if (skill.icon.startsWith('Si')) {
                   IconComponent = SiIcons[skill.icon];
                 }
-                return (<figure key={id} className={styles.icons}> 
+                return (<figure key={id}> 
                     <div className={styles.skillIcon}>
-                    {IconComponent && <IconComponent />}
+                    {IconComponent && <IconComponent className={styles.icon} />}
                     <p className={styles.skillName}>{skill.name}</p>
                     </div>
                 </figure>)
@@ -105,5 +106,6 @@ export const Skills = () => {
 
         </div>
     </section>
+    </div>
   )
 }

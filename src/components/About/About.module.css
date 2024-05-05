@@ -7,7 +7,7 @@
     grid-gap: 2rem;
     z-index: 1;
     padding: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     grid-template-columns: min-content 1fr 1fr;
     grid-template-rows: min-content 1fr min-content;
     grid-template-areas: 
@@ -15,6 +15,7 @@
         'lottieContainer bootCamp image'
         '. bootCamp goals';
     max-width: 1500px;
+    
 }
 
 .titleContainer {
