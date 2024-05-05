@@ -6,16 +6,17 @@
     margin: 0 auto;
     grid-gap: 2rem;
     z-index: 1;
-    padding: 2rem;
-    margin-top: 2rem;
+    padding: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     grid-template-columns: min-content 1fr 1fr;
-    grid-template-rows: min-content 1fr min-content;
+    grid-template-rows: max-content;/* min-content 1fr min-content */
     grid-template-areas: 
         'title path image'
         'lottieContainer bootCamp image'
         '. bootCamp goals';
     max-width: 1500px;
-    
+   
 }
 
 .titleContainer {
@@ -86,9 +87,6 @@
     
 }
 
-.span {
-    color: var(--color-accent4);
-}
 
 .image {
     grid-area: image; 
