@@ -1,5 +1,7 @@
-import React from 'react'
-import projects from '../../data/projects.json'
+import React from 'react';
+import projects from '../../data/projects.json';
+import { ProjectsCard } from './ProjectsCard';
+import styles from './Projects.module.css';
 
 export const Projects = () => {
   return (
@@ -8,11 +10,7 @@ export const Projects = () => {
         <div>
             {projects.map((project, id) => {
                 return (
-                <div key={id}>
-                    <img src={project.imageSrc} alt={'Image of ${project.title}'}/>
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                    </div>
+                <ProjectsCard key={id} project ={project} />
             );
             })}
         </div>
