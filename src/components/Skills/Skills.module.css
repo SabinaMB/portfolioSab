@@ -122,8 +122,9 @@ align-items: center;
     border-radius: 10px;
     border: 1px solid rgba(101, 100, 100, 0.2);
     box-shadow: 0 4px 8px rgba(101, 100, 100, 0.2);
-    padding: 20px;
+    padding: 2rem;
     position: relative;
+    line-height: 2rem;
   }
   
   .techSkills::after,

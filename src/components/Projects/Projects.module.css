@@ -1,2 +1,22 @@
 @import '../../vars.css';
 
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10rem 2rem 10rem;
+    max-width: 1500px;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 3.5ch;
+    font-weight: bolder;
+    letter-spacing: 0.15rem;
+    font-family: var(--font-oswald);
+    color: var(--color-accent4);
+    margin-bottom: 2rem;
+}

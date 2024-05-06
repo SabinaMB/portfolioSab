@@ -13,7 +13,7 @@ const scrollToAbout = () => {
 
   return (
     <div className={styles.heroWrapper} style={{backgroundImage: `url(${getImageUrl('hero1.jpeg')})`}} >
-    <section className={styles.container} /* style={{backgroundImage: `url(${getImageUrl('hero1.jpeg')})`}} */>
+    <section className={styles.container}>
         <div className={styles.header}>
             <img src={getImageUrl('imgSab14.jpg')} alt="Sabina" className={styles.logo} />  
             <p className={styles.name}>Sabina Marian - Blanariu</p>

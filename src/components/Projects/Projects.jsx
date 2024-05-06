@@ -5,9 +5,9 @@ import styles from './Projects.module.css';
 
 export const Projects = () => {
   return (
-    <section>
-        <h2>Projects</h2>
-        <div>
+    <section className={styles.container}>
+        <h2 className={styles.title}>Projects</h2>
+        <div className={styles.project}>
             {projects.map((project, id) => {
                 return (
                 <ProjectsCard key={id} project ={project} />
