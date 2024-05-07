@@ -1,4 +1,6 @@
-@import '../../vars.css';
+
+
+ @import '../../vars.css';
 
 .skillsWrapper{
     background-color: var(--color-dark2);
@@ -43,7 +45,6 @@ flex-direction: column;
 align-items: center;
 }
 
-
 .icon {
     width: 2.3rem;
     height: 2.3rem;
@@ -83,10 +84,9 @@ align-items: center;
 .education {
     grid-area: education;
     display: grid;
-    max-width:60rem;
+    width:70%;
     margin: 0 auto;
 }
-
 
 .hobbies {
     grid-area: hobbies;
@@ -105,12 +105,12 @@ align-items: center;
     align-self: center;
     justify-self: center;
     margin:0.5rem;
-    font-size: 2.5ch;
+    font-size: 2.6ch;
+    letter-spacing: 0.15ch;
     font-weight: 500;
     font-family: var(--font-oswald);
     color: var(--color-accent4);
 }
-
 
   
   .techSkills,
@@ -119,9 +119,9 @@ align-items: center;
   .education,
   .hobbies {
   
-    border-radius: 10px;
-    border: 1px solid rgba(101, 100, 100, 0.2);
-    box-shadow: 0 4px 8px rgba(101, 100, 100, 0.2);
+    border-radius: 25px;
+    border: 1px solid rgba(101, 100, 100, 0.4);
+    box-shadow: 0 1px 10px rgba(101, 100, 100, 0.4);
     padding: 2rem;
     position: relative;
     line-height: 2rem;
@@ -154,10 +154,26 @@ align-items: center;
             'education'
             'hobbies';
         grid-row: max-content;
+        padding: 1rem;
     }
+
+    .skillIcon {
+        margin: 0.5rem;
+        
+        }
     
     .icon {
-        width: 2rem;
-        height: 2rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .education {
+        width: 100%;
+    }
+
+    .ul {
+        margin-left: 0.5rem;
+        margin-top: 1rem;
     }
   }
+

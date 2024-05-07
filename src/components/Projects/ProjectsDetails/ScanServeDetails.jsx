@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, BrowserRouter as Router} from 'react-router-dom'
 import styles from './ScanServeDetails.module.css'
 
 export const ScanServeDetails = () => {
@@ -8,9 +8,9 @@ export const ScanServeDetails = () => {
     navigate(-1);
   }
   return (
-    <div>
+    <div className={styles.container}>
       <p className={styles.title}>ScanServeDetails</p>
-      <button onClick={handleGoBack}>Go Back</button>
+      <button className={styles.button} onClick={handleGoBack}>Go Back</button>
     </div>
   )
 }

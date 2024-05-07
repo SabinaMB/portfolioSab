@@ -1,3 +1,5 @@
+
+
 @import '../../vars.css';
 
 .container{
@@ -5,13 +7,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 4rem 0 auto;
-    max-width: 700px;
-    /* border-top: 2px solid rgba(101, 100, 100, 0.2); */
-    border-radius: 10px;
-    border: 1px solid rgba(101, 100, 100, 0.2);
-    box-shadow: 0 4px 8px rgba(101, 100, 100, 0.2);
+    margin: 0 auto;
+    margin-top: 4rem;
+    max-width: 70%;
+    border-radius: 25px;
+    border: 1px solid rgba(101, 100, 100, 0.4);
+    box-shadow: 0 1px 10px rgba(101, 100, 100, 0.4);
     padding: 2rem;
+    overflow: hidden;
 }
 
 .container:first-child{
@@ -20,11 +23,19 @@
 
 .image {
     width: auto;
-    max-height: clamp(15rem, 20vw, 25rem);
+    max-width: 100%;
+    max-height: clamp(20rem, 25vw, 30rem);
     border-radius: 1rem;
     margin: 1rem;
 }
 
+.container:first-child .image{
+    max-height: clamp(7rem, 10vw, 15rem);
+}
+
+.container:nth-child(3) .image{
+    max-height: clamp(10rem, 15vw, 15rem);
+}
 .title{
     margin: 1.5rem;
     font-size: 2.5ch;
@@ -36,13 +47,14 @@
     font-size: 2ch;
     line-height: 2rem;
 }
+
 .detailsBtn {
     font-size: 2.5ch;
     font-family: var(--font-oswald);
     font-weight: 500;
     background-color: transparent;
     padding: 0.5rem 1rem;
-    border-radius: 20px;
+    border-radius: 15px;
     cursor: pointer;
     margin: 0 auto;
     margin-top: 2rem;
@@ -51,4 +63,12 @@
 .detailsBtn:hover {
     color: var(--color-accent4);
     transition: color 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 2rem auto; 
+        padding: 1rem;
+        max-width: 100%;
+    }
 }
