@@ -2,17 +2,20 @@
   {
     "title": "Scan & Serve",
     "imageSrc": "ScanServeLogo.png",
-    "description": "Scan & Serve is a mobile application that allows users to scan a QR code to view a menu, order food, and pay for their meal. The app is designed to be used in restaurants, cafes, and other food service establishments. Users can browse the menu, select items, and pay for their order using their smartphone. The app is easy to use and provides a convenient way for customers to order and pay for their food without having to wait in line or flag down a server. Scan & Serve is available for both iOS and Android devices and can be downloaded for free from the App Store or Google Play Store."
+    "description": "Scan & Serve is a mobile application that allows users to scan a QR code to view a menu, order food, and pay for their meal. The app is designed to be used in restaurants, cafes, and other food service establishments. Users can browse the menu, select items, and pay for their order using their smartphone. The app is easy to use and provides a convenient way for customers to order and pay for their food without having to wait in line or flag down a server. Scan & Serve is available for both iOS and Android devices and can be downloaded for free from the App Store or Google Play Store.",
+    "readMoreLink": "/scan-serve-details"
   },
 
   {
     "title": "My portfolio",
     "imageSrc": "myPortfolio.png",
-    "description": "My Portfolio is a personal website that showcases my work as a web developer. The site features a portfolio section with examples of my projects, a blog where I share my thoughts and experiences, and a contact page where visitors can get in touch with me. The site is designed to be clean, modern, and easy to navigate, with a focus on showcasing my skills and experience as a developer. My Portfolio is built using HTML, CSS, and JavaScript, and is hosted on GitHub Pages. The site is responsive and works well on desktop, tablet, and mobile devices."
+    "description": "My Portfolio is a personal website that showcases my work as a web developer. The site features a portfolio section with examples of my projects, a blog where I share my thoughts and experiences, and a contact page where visitors can get in touch with me. The site is designed to be clean, modern, and easy to navigate, with a focus on showcasing my skills and experience as a developer. My Portfolio is built using HTML, CSS, and JavaScript, and is hosted on GitHub Pages. The site is responsive and works well on desktop, tablet, and mobile devices.",
+    "readMoreLink": "/my-portfolio-details"
   },
   {
     "title": "PetMedRecords",
     "imageSrc": "pets33.jpg",
-    "description": "PetMedRecords is a comprehensive electronic health card designed for pets, connecting pet owners, veterinary doctors, and groomers seamlessly. With PetHealthTrack, veterinary doctors have exclusive access to manage and update pet medical records, ensuring accurate and up-to-date health information. Pet owners can easily add observations and notes about their pets' health, fostering collaboration and transparency in pet healthcare. Additionally, groomers can access relevant health information to provide personalized grooming services tailored to each pet's needs. Whether it's scheduling appointments, tracking vaccinations, managing grooming preferences, or monitoring ongoing treatments, PetMedRecords simplifies pet care management for all involved."
+    "description": "PetMedRecords is a comprehensive electronic health card designed for pets, connecting pet owners, veterinary doctors, and groomers seamlessly. With PetHealthTrack, veterinary doctors have exclusive access to manage and update pet medical records, ensuring accurate and up-to-date health information. Pet owners can easily add observations and notes about their pets' health, fostering collaboration and transparency in pet healthcare. Additionally, groomers can access relevant health information to provide personalized grooming services tailored to each pet's needs. Whether it's scheduling appointments, tracking vaccinations, managing grooming preferences, or monitoring ongoing treatments, PetMedRecords simplifies pet care management for all involved.",
+    "readMoreLink": "/pet-med-records-details"
   }
 ]
