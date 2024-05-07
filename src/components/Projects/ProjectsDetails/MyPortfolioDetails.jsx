@@ -1,16 +1,16 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import styles from './ScanServeDetails.module.css'
+import styles from './MyPortfolioDetails.module.css'
 
-export const ScanServeDetails = () => {
+export const MyPortfolioDetails = () => {
   const navigate = useNavigate();
   const handleGoBack = () => {
     navigate(-1);
   }
   return (
-    <div>
-      <p className={styles.title}>ScanServeDetails</p>
+    <div><p className={styles.title}>MyPortfolioDetails</p>
       <button onClick={handleGoBack}>Go Back</button>
     </div>
+    
   )
 }

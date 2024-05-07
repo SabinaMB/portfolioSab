@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import App from './App.jsx'
 import { ScanServeDetails } from './components/Projects/ProjectsDetails/ScanServeDetails';
-
-import './index.css'
+import { MyPortfolioDetails } from './components/Projects/ProjectsDetails/MyPortfolioDetails';
+import { PetRecordsDetails } from './components/Projects/ProjectsDetails/PetRecordsDetails';
+  
+  
+import './index.css';
 
 import '@fontsource/outfit'
 import '@fontsource/roboto'
@@ -15,15 +18,7 @@ import '@fontsource/barlow-condensed'
 import '@fontsource/oswald'
 
 
-/* import MyPortfolioDetails from './components/Projects/ProjectDetails/MyPortfolioDetails';
-import PetMedRecordsDetails from './components/Projects/ProjectDetails/PetMedRecordsDetails'; */
 
-/* ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
- */
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -31,8 +26,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App/>} />
         <Route path="/scan-serve-details" element={<ScanServeDetails/>} />
-        {/* <Route path="/projects/my-portfolio-details" component={MyPortfolioDetails} />
-        <Route path="/projects/pet-med-records-details" component={PetMedRecordsDetails} /> */}
+        <Route path="/my-portfolio-details" element={<MyPortfolioDetails/>} />
+        <Route path="pet-records-details" element={<PetRecordsDetails/>} /> 
       </Routes>
     </Router>
   </React.StrictMode>,
