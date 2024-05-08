@@ -1,18 +1,118 @@
 @import '../../../vars.css';
 
-.container {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-dark);
+
+
+
+.container{
     color: var(--color-text);
-    min-height: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-dark2);
+}
+
+.nameWrapper {
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--color-dark);
+}
+
+.spanName {
+    color: var(--color-accent4);
+    font-size: 3.5rem;
+    font-family: var(--font-oswald);
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    letter-spacing: 0.15rem;
+    font-family: var(--font-oswald);
+    z-index: 1000;
+}
+
+.name {
+    color: var(--color-accent4);
+    margin:0 auto;
+    margin-bottom: 0.3rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.15rem;
+    font-family: var(--font-oswald);
+    z-index: 1000;
+}
+
+.projectWrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 5rem;
+    flex-grow: 1;
+}
+
+.projectDescription {
+    display: flex;
+    width: 80%;
+}
+
+.projectDescription .title {
+    width: 40%;
+}
+
+.projectDescription p {
+    width: 60%;
+    text-wrap:pretty;
+    hyphens:auto;
+
+}
+
+.adminWrapper {
+    display:grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+    grid-gap: 3rem;
+    overflow: visible;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid whitesmoke;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img:hover {
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+.guestWrapper {
+    display:grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-gap: 3rem;
+    overflow: hidden;
+}
+
+.imgOrder,
+.imgUser {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 20rem;
+    height:auto;
+    border-radius: 15px;
+    border: 2px solid whitesmoke;
 }
 
 .title {
-    color: var(--color-accent4);
+    font-size: 1.5rem;
+    font-family: var(--font-oswald);
+    justify-self: center;
+    margin-top: 3rem;
 }
-
 .button {
     font-size: clamp(1rem, 5vw, 1.5rem);
     font-family: var(--font-oswald);
@@ -28,4 +128,22 @@
 .button:hover {
     color: var(--color-accent4);
     transition: color 0.5s;
+}
+
+@media  screen and (max-width: 1500px) {
+
+    .img:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+    
+}
+
+@media  screen and (max-width: 800px) {
+
+    .img:hover {
+    transform: none;
+    
+}
+    
 }
