@@ -26,8 +26,8 @@ export const ScanServeDetails = () => {
         <p className={styles.titleAdmin}>For restaurant administrators: a new level of control and flexibility</p>
 
         <div className={styles.feature1}>
-        <p >Easy Setup:</p>
-        <p >Start by creating an account for your restaurant. Customize your profile with your restaurant's name, description, logo, and operating hours, establishing your unique presence in the dining industry.
+        <p className={styles.feature}>Easy Setup:</p>
+        <p className={styles.feature}>Start by creating an account for your restaurant. Customize your profile with your restaurant's name, description, logo, and operating hours, establishing your unique presence in the dining industry.
         </p>
         </div>
         <figure className={styles.imgSetup}>
@@ -35,24 +35,24 @@ export const ScanServeDetails = () => {
         </figure>
 
         <div className={styles.feature2}>
-        <p >Menu Management Made Simple:</p>
-        <p >Our user-friendly interface allows you to easily create, update, or delete menu items. Refresh your offerings with just a few clicks to keep your menu exciting.</p>
+        <p className={styles.feature}>Menu Management Made Simple:</p>
+        <p className={styles.feature}>Our user-friendly interface allows you to easily create, update, or delete menu items. Refresh your offerings with just a few clicks to keep your menu exciting.</p>
         </div>
         <figure className={styles.imgMenu}>
           <img src={getImageUrl('ScanServe/restaurantMenu.png')} className={styles.img} alt="Menu management" />
         </figure>
 
         <div className={styles.feature3}>
-        <p >Table Management:</p>
-        <p >Organize your seating effortlessly by setting up virtual tables in the app. Each table gets a unique QR code, ready for your guests to scan.</p>
+        <p className={styles.feature}>Table Management:</p>
+        <p className={styles.feature}>Organize your seating effortlessly by setting up virtual tables in the app. Each table gets a unique QR code, ready for your guests to scan.</p>
         </div>
         <figure className={styles.imgTables}>
           <img src={getImageUrl('ScanServe/restaurantTables.png')} className={styles.img} alt="Table management" />
         </figure>
 
         <div className={styles.feature4}>
-        <p >Real-Time Order Management:</p>
-        <p >Leveraging the power of the Socket.IO library, Scan & Serve offers live order management. Receive orders as they come in, update statuses in real-time, and keep a direct communication line with your guests. Manage your restaurant operations in real-time, ensuring prompt and efficient service for every customer.</p>
+        <p className={styles.feature}>Real-Time Order Management:</p>
+        <p className={styles.feature}>Leveraging the power of the Socket.IO library, Scan & Serve offers live order management. Receive orders as they come in, update statuses in real-time, and keep a direct communication line with your guests. Manage your restaurant operations in real-time, ensuring prompt and efficient service for every customer.</p>
         </div>
         <figure className={styles.imgOrders1}>
           <img src={getImageUrl('ScanServe/ordersManag1.png')} className={styles.img} alt="Order management" />

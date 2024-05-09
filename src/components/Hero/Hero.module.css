@@ -83,10 +83,9 @@
 .aboutBtn {
     font-size: clamp(1rem, 6vw, 1.5rem);
     font-family: var(--font-oswald);
-    font-weight: 500;
     background-color: transparent;
     padding: 0.5rem 1rem;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     margin: 0 auto;
     margin-top: 2.5rem;

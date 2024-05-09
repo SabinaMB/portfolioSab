@@ -52,10 +52,9 @@
 .detailsBtn {
     font-size: 2.5ch;
     font-family: var(--font-oswald);
-    font-weight: 500;
     background-color: transparent;
     padding: 0.5rem 1rem;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     margin: 0 auto;
     margin-top: 2rem;

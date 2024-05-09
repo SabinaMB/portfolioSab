@@ -196,7 +196,7 @@
 .feature{
     text-wrap:pretty;
     hyphens:auto;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 2rem;
 
 }
@@ -254,10 +254,9 @@
 .button {
     font-size: clamp(1rem, 5vw, 1.5rem);
     font-family: var(--font-oswald);
-    font-weight: 500;
     background-color: transparent;
     padding: 0.5rem 1rem;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     margin: 0 auto;
     margin-top: 2.5rem;
@@ -269,18 +268,106 @@
 }
 
 
-/* @media  screen and (min-width: 1401px) {
-    .img:hover {
-        transform: scale(1.2);
-        z-index: 1;
-    }
-} */
 
-/* @media  screen and (max-width: 1400px) {
+@media  screen and (max-width: 1200px) {
+
+    .name {
+        font-size: clamp(1.5rem , 5vw, 2rem);
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .spanName {
+        font-size: clamp(2rem , 5vw, 2.5rem);
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .projectDescription {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .projectDescription title {
+        font-size: 1.2rem;
+    }
+
+    .projectDescription p {
+        font-size: 0.9rem;
+        padding: 0;
+    }
 
     .img:hover {
     transform: none;
+    }
+
+    .adminWrapper {
+        display:grid;
+        margin: 0 auto;
+        row-gap: 2rem;
+        padding-top: 4rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+        grid-template-areas: 
+            'titleAdmin'
+            'feature1' 
+            'imgSetup'
+            'feature2'
+            'imgMenu'
+            'feature3'
+            'imgTables'
+            'feature4'
+            'imgOrders1'
+            'imgOrders2';
+    } 
     
+    .guestWrapper {
+        display:grid;
+        margin: 0 auto;
+        padding-top: 6rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+        grid-template-areas: 
+        'titleGuests'
+        'feature5' 
+        'feature6'
+        'imgUser'
+        'feature7'
+        'imgOrder';
+        row-gap: 1rem;
+    }
+    
+    .feature4 {
+        width: 100%;
+    }
+
+    .imgOrder,
+    .imgUser {
+        margin: 0 auto;
+    }
+
+} 
+
+@media screen and (max-width: 800px) {
+
+    .projectDescription {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .projectDescription .title {
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+
+    .projectDescription p {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0;
+    }
+
 }
-    
-} */
+   
