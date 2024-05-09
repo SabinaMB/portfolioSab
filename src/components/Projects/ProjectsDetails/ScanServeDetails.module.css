@@ -46,73 +46,211 @@
     height: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 5rem;
+    padding: 6rem 2rem;
     flex-grow: 1;
 }
 
 .projectDescription {
     display: flex;
     width: 80%;
+    padding: 6rem 0;
 }
 
 .projectDescription .title {
     width: 40%;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.15rem;
+    font-family: var(--font-oswald);
+    justify-self: left;
+    margin: 4rem 0;
 }
 
 .projectDescription p {
     width: 60%;
+    align-items: center;
     text-wrap:pretty;
     hyphens:auto;
+    font-size: 1.2rem;
+    line-height: 2rem;
 
 }
 
 .adminWrapper {
     display:grid;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
-    grid-gap: 3rem;
-    overflow: visible;
+    gap: 2rem;
+    column-gap: 3rem;
+    padding-top: 4rem;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: max-content;
+    grid-template-areas: 
+        'titleAdmin titleAdmin'
+        'feature1 feature2'
+        'imgSetup imgMenu'
+        'feature3 imgTables'
+        'feature4 feature4'
+        'imgOrders1 imgOrders2';
 }
+
+
+.titleAdmin {
+    grid-area: titleAdmin;
+    font-size: 1.5rem;
+    font-family: var(--font-oswald);
+    justify-self: left;
+}
+
+.feature1 {
+    grid-area: feature1;
+    text-wrap:pretty;
+    hyphens:auto;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.feature2 {
+    grid-area: feature2;
+}
+
+.feature3 {
+    grid-area: feature3;
+    text-wrap:pretty;
+    hyphens:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature4 {
+    grid-area: feature4;
+    text-wrap:pretty;
+    hyphens:auto;
+    width: 70%;
+}
+
+.imgSetup {
+    grid-area: imgSetup;
+}
+
+.imgMenu {
+    grid-area: imgMenu;
+}
+
+.imgTables {
+    grid-area: imgTables;
+}
+
+.imgOrders1 {
+    grid-area: imgOrders1;
+}
+
+.imgOrders2 {
+    grid-area: imgOrders2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 .img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 15px;
     border: 2px solid whitesmoke;
     transition: transform 0.3s ease-in-out;
 }
 
 .img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     z-index: 1;
 }
 
 .guestWrapper {
     display:grid;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 2rem;
+    column-gap: 0.5rem;
+    padding-top: 6rem;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: max-content;
+    grid-template-areas: 
+    'titleGuests titleGuests titleGuests'
+    'imgUser feature5 imgOrder'
+    'imgUser feature6 imgOrder'
+    'imgUser feature7 imgOrder';
     grid-gap: 3rem;
-    overflow: hidden;
 }
 
-.imgOrder,
-.imgUser {
-    width: 100%;
-    height: auto;
+.titleGuests {
+    grid-area: titleGuests;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.15rem;
+    font-family: var(--font-oswald);
+    justify-self: left;
+}
+
+.feature{
+    text-wrap:pretty;
+    hyphens:auto;
+    font-size: 1.2rem;
+    line-height: 2rem;
+
+}
+.feature5 {
+    grid-area: feature5;
+}
+
+.feature6 {
+    grid-area: feature6;
+}
+
+.feature7 {
+    grid-area: feature7;
+}
+
+.imgOrder {
+    grid-area: imgOrder;
     object-fit: cover;
+    width: 100%;
     max-width: 20rem;
     height:auto;
     border-radius: 15px;
-    border: 2px solid whitesmoke;
 }
 
-.title {
-    font-size: 1.5rem;
-    font-family: var(--font-oswald);
-    justify-self: center;
-    margin-top: 3rem;
+.imgUser {
+    grid-area: imgUser;
+    object-fit: cover;
+    width: 100%;
+    max-width: 20rem;
+    height:auto;
+    border-radius: 15px;
 }
+
+.info {
+    padding: 4rem;
+    margin-top: 4rem;
+    text-align: center; 
+    font-size: 2.5rem;
+}
+
+.info p {
+    margin: 1rem 0; 
+    font-size: 1.2rem;
+}
+
+.info a {
+    color: var(--color-accent4); 
+    text-decoration: none; 
+}
+
+.info a:hover {
+    text-decoration: underline; 
+}
+
 .button {
     font-size: clamp(1rem, 5vw, 1.5rem);
     font-family: var(--font-oswald);
@@ -130,20 +268,19 @@
     transition: color 0.5s;
 }
 
-@media  screen and (max-width: 1500px) {
 
+/* @media  screen and (min-width: 1401px) {
     .img:hover {
-    transform: scale(1.3);
-    z-index: 1;
-}
-    
-}
+        transform: scale(1.2);
+        z-index: 1;
+    }
+} */
 
-@media  screen and (max-width: 800px) {
+/* @media  screen and (max-width: 1400px) {
 
     .img:hover {
     transform: none;
     
 }
     
-}
+} */

@@ -9,6 +9,7 @@ export const ProjectsCard = ({
       const handleReadMoreClick = () => {
         if (readMoreLink) {
           navigate(readMoreLink);
+          window.scrollTo(0, 0);
         }
       };
 

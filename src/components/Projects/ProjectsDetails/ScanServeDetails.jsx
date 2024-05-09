@@ -23,31 +23,37 @@ export const ScanServeDetails = () => {
       </div>
       
       <div className={styles.adminWrapper}>
-        <p className={styles.title}>For restaurant administrators: a new level of control and flexibility</p>
+        <p className={styles.titleAdmin}>For restaurant administrators: a new level of control and flexibility</p>
 
-        <p className={styles.feature}>Easy Setup:</p>
-        <p>Start by creating an account for your restaurant. Customize your profile with your restaurant's name, description, logo, and operating hours, establishing your unique presence in the dining industry.
+        <div className={styles.feature1}>
+        <p >Easy Setup:</p>
+        <p >Start by creating an account for your restaurant. Customize your profile with your restaurant's name, description, logo, and operating hours, establishing your unique presence in the dining industry.
         </p>
+        </div>
         <figure className={styles.imgSetup}>
           <img src={getImageUrl('ScanServe/restaurantSetup.png')} className={styles.img} alt="Easy setup" />
         </figure>
 
-
-        <p className={styles.feature}>Menu Management Made Simple:</p>
-        <p className={styles.featureTitle}>Our user-friendly interface allows you to easily create, update, or delete menu items. Refresh your offerings with just a few clicks to keep your menu exciting.</p>
+        <div className={styles.feature2}>
+        <p >Menu Management Made Simple:</p>
+        <p >Our user-friendly interface allows you to easily create, update, or delete menu items. Refresh your offerings with just a few clicks to keep your menu exciting.</p>
+        </div>
         <figure className={styles.imgMenu}>
           <img src={getImageUrl('ScanServe/restaurantMenu.png')} className={styles.img} alt="Menu management" />
         </figure>
 
-
-        <p className={styles.feature}>Table Management:</p>
-        <p className={styles.featureTitle}>Organize your seating effortlessly by setting up virtual tables in the app. Each table gets a unique QR code, ready for your guests to scan.</p>
+        <div className={styles.feature3}>
+        <p >Table Management:</p>
+        <p >Organize your seating effortlessly by setting up virtual tables in the app. Each table gets a unique QR code, ready for your guests to scan.</p>
+        </div>
         <figure className={styles.imgTables}>
           <img src={getImageUrl('ScanServe/restaurantTables.png')} className={styles.img} alt="Table management" />
         </figure>
 
-        <p className={styles.feature}>Real-Time Order Management:</p>
-        <p className={styles.featureTitle}>Leveraging the power of the Socket.IO library, Scan & Serve offers live order management. Receive orders as they come in, update statuses in real-time, and keep a direct communication line with your guests. Manage your restaurant operations in real-time, ensuring prompt and efficient service for every customer.</p>
+        <div className={styles.feature4}>
+        <p >Real-Time Order Management:</p>
+        <p >Leveraging the power of the Socket.IO library, Scan & Serve offers live order management. Receive orders as they come in, update statuses in real-time, and keep a direct communication line with your guests. Manage your restaurant operations in real-time, ensuring prompt and efficient service for every customer.</p>
+        </div>
         <figure className={styles.imgOrders1}>
           <img src={getImageUrl('ScanServe/ordersManag1.png')} className={styles.img} alt="Order management" />
         </figure>
@@ -58,27 +64,38 @@ export const ScanServeDetails = () => {
       </div>
 
       <div className={styles.guestWrapper}>
-        <p className={styles.title}>For guests: a seamless and interactive dining experience</p>
-      </div>
-
+        <p className={styles.titleGuests}>For guests: a seamless and interactive dining experience</p>
+      
+      <div className={styles.feature5}>
       <p className={styles.feature}>Instant Access to Menus:</p>
-      <p className={styles.featureTitle}>Forget waiting for a physical menu. Scan the QR code at your table to see the restaurant's menu directly on your device. Explore the menu at your leisure, with all the details you need easily accessible.</p>
-      <figure >
+      <p className={styles.feature} >Forget waiting for a physical menu. Scan the QR code at your table to see the restaurant's menu directly on your device. Explore the menu at your leisure, with all the details you need easily accessible.</p>
+      </div>
+      <figure className={styles.imgUser}>
           <img src={getImageUrl('ScanServe/user.gif')} className={styles.imgUser} alt="Access to menu" />
       </figure>
 
+      <div className={styles.feature6}>
       <p className={styles.feature}>Effortless Ordering:</p>
-      <p className={styles.featureTitle}>After choosing your items, place your order directly through the app. Avoid the wait to catch a waiter's attention—it's all about convenience and speed.</p>
-      <figure>
+      <p className={styles.feature}>After choosing your items, place your order directly through the app. Avoid the wait to catch a waiter's attention— it's all about convenience and speed.</p>
+      </div>
+      <figure className={styles.imgOrder}>
           <img src={getImageUrl('ScanServe/order.gif')} className={styles.imgOrder} alt="Effortless ordering" />
       </figure>
 
+      <div className={styles.feature7}>
       <p className={styles.feature}>Real-Time Updates:</p>
-      <p className={styles.featureTitle}>From the moment you place your order until it's ready, stay informed with live updates on your order status through the app. Always know exactly when your meal will be ready to enjoy.</p>
+      <p className={styles.feature}>From the moment you place your order until it's ready, stay informed with live updates on your order status through the app. Always know exactly when your meal will be ready to enjoy.</p>
+      </div>
 
      </div> 
-
+    <div className={styles.info}>
+      <p>Technologies Used: </p>
+      <p>React, Node.js, Express, MongoDB,  Socket.IO library</p>
+      <p className={styles.gitHub}>GitHub Repository: <a href="https://github.com/andrii-kuznichenko/restaurant-app" target="_blank" rel="noreferrer">Scan & Serve</a></p>
+      <p className={styles.liveApp}>Live Application: <a href="https://scan-service.onrender.com/" target="_blank" rel="noreferrer">Scan & Serve</a></p>
       <button className={styles.button} onClick={handleGoBack}>Go Back</button>
+  </div>
+    </div>
     </div>
   )
 }
