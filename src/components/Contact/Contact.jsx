@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com'
 import styles from './Contact.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export const Contact = () => {
   const [emailSent, setEmailSent] = useState(false);
@@ -17,9 +19,8 @@ export const Contact = () => {
   }
   return (
     <section className={styles.container} id='contact'>
-        <div className={styles.contactWrapper}>
         <h2 className={styles.title}>Contact Me</h2>
-        <form onSubmit={sendEmail}>
+        <form onSubmit={sendEmail} className={styles.form}>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required></input>
 
@@ -30,10 +31,15 @@ export const Contact = () => {
         <textarea id="message" name="message" required></textarea>
 
         <input type="submit" value="Submit"></input>
+
+         {emailSent && <p>Email successfully sent!</p>}
         </form>
-        {emailSent && <p>Email successfully sent!</p>}
-     </div>
-     
+       <div className={styles.social}>
+       <h2 className={styles.title}>Connect with me</h2>
+        <a href="https://www.linkedin.com/in/sabina-marian-blanariu-3276a3144/" target="_blank" rel="noreferrer">
+        <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
+        </a>
+       </div>
     </section>
     
   )

@@ -2,7 +2,11 @@
   {
     "title": "Scan & Serve",
     "imageSrc": "ScanServe/ScanServeLogo.png",
-    "description": "Scan & Serve is a mobile application that allows users to scan a QR code to view a menu, order food, and pay for their meal. The app is designed to be used in restaurants, cafes, and other food service establishments. Users can browse the menu, select items, and pay for their order using their smartphone. The app is easy to use and provides a convenient way for customers to order and pay for their food without having to wait in line or flag down a server. Scan & Serve is available for both iOS and Android devices and can be downloaded for free from the App Store or Google Play Store.",
+    "description": [ 
+      "The culminating project of our coding bootcamp, developed through collaborative efforts within a dedicated team.",
+      "Isn't just an app. It's a comprehensive solution aimed at improving restaurant operations' efficiency and enhancing the dining experience for customers.",
+      "Whether you're a restaurant owner looking to streamline your services or a diner in search of a hassle-free meal, Scan & Serve caters to your needs."
+  ],
     "readMoreLink": "/scan-serve-details"
   },
 

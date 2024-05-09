@@ -17,7 +17,12 @@ export const ProjectsCard = ({
     <div className={styles.container}>
         <img src={getImageUrl(imageSrc)} alt={`Image of ${title}`} className={styles.image}/>
         <h3 className={styles.title}>{title}</h3>
-        <p className={styles.description}>{description}</p>
+        {Array.isArray(description) ? description.map((paragraph, index) => (
+          <p key={index} className={styles.description}>{paragraph}</p>
+        )) : <p className={styles.description}>{description}</p>}
+
+
+        {/* <p className={styles.description}>{description}</p> */}
         <button className={styles.detailsBtn} onClick={handleReadMoreClick}>Read more</button>
         </div>
   )

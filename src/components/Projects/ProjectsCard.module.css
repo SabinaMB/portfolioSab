@@ -48,6 +48,8 @@
 .description {
     font-size: 2ch;
     line-height: 2rem;
+    text-wrap: pretty;
+    hyphens: auto;
 }
 
 .detailsBtn {
