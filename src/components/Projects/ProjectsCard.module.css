@@ -36,6 +36,7 @@
 .container:nth-child(3) .image{
     max-height: clamp(10rem, 15vw, 15rem);
 }
+
 .title{
     margin: 1.5rem;
     font-size: 2.5ch;
