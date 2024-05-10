@@ -23,10 +23,10 @@
     "title": "PetRecords",
     "imageSrc": "PetsRecords/PetsRecordsImg.jpg",
     "description": ["Currently working on.",
-    "A comprehensive electronic health card, connecting pet owners, veterinary doctors, and groomers seamlessly.",
-    "Exclusive Veterinary Access to manage and update pet medical records.",
+    "A comprehensive electronic health card, connecting pet owners, veterinary doctors and groomers seamlessly.",
+    "Exclusive veterinary access to manage and update pet medical records.",
     "Pet owners can easily add observations and notes about their pets' health.",
-    "Groomers can access relevant health information to provide personalized grooming services tailored to each pet's needs.",
+    "Groomers can access relevant health information to provide personalized services tailored to each pet's needs.",
     "Whether it's scheduling appointments, tracking vaccinations, managing grooming preferences or monitoring ongoing treatments, PetRecords simplifies pet care management for all involved.",
     "Anticipated technologies for development: React, Node.js, MongoDB or PostgreSQL and authentication mechanisms."
   ],

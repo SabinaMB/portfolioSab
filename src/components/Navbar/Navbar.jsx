@@ -31,7 +31,9 @@ export const Navbar = () => {
             <li>
                 <a href='#contact' className={styles.navLink}>Contact</a>
             </li>
-            <button className={styles.cvBtn}>Download CV</button> 
+            <button className={styles.cvBtn}>
+            <a href="https://portfolio-sabina.netlify.app/CV%20Sabina%20MB%20Eng.pdf" target="_blank" rel="noopener noreferrer" className={styles.cvBtn}>Download CV</a>
+            </button> 
         </ul>
        
     </div>
