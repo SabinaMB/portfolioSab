@@ -48,11 +48,11 @@ export const Skills = () => {
             <p className={styles.position}>Secretary</p>
             <p className={styles.date}>September 2004 - April 2016</p>
             <ul className={styles.ul}>
-                <li>Coordinated foreign student affairs and managed five admission processes.</li>
+                <li>Coordinated foreign student affairs and managed 5 admission processes.</li>
                 <li>Provided administrative support for the university's managerial control system.</li>
                 <li>Developed and implemented teaching quality management systems.</li>
-                <li>Organized international conferences on education and technology management.</li>
-                <li>Contributed as a Research Assistant in four projects.</li>
+                <li>Organized 4 international conferences on education and technology management.</li>
+                <li>Contributed as a Research Assistant in 4 projects.</li>
             </ul>
             <p className={styles.company}>S.C. Adesgo S.A., Bucharest, Romania</p>
             <p className={styles.position}>Engineer</p>
@@ -71,8 +71,8 @@ export const Skills = () => {
         <p className={styles.date}>October 2023 - February 2024</p>
         <p className={styles.name}>Full Stack Web and App Development course</p>
         <ul className={styles.ul}>
-            <li>Intensive full stack web development bootcamp covering HTML, CSS, JavaScript, React, Node.js with a focus on project-based, team-oriented and agile methodologies.</li>
-            <li>Final project: collaborated within a team to develop 'Scan & Serve', a groundbreaking restaurant management app. Contributed to the creation of features such as user-friendly menu management, virtual table setup with QR codes, and real-time order tracking using Socket.IO. Demonstrated teamwork, problem-solving and coding skills throughout the project.</li>
+            <li>Intensive full stack web development bootcamp covering HTML, CSS, JavaScript, React, Node.js, Git, GitHub, SQL, NoSQL, RESTful API with a focus on project-based, team-oriented and agile methodologies.</li>
+            <li>Final project: collaborated within a 4 members team to develop 'Scan & Serve', a complex restaurant management app. Contributed to the creation of features such as user-friendly menu management, virtual table setup with QR codes, and real-time order tracking using Socket.IO. Demonstrated teamwork, problem-solving and coding skills throughout the project.</li>
         </ul>
         <p className={styles.institution}>Technical University "Gheorghe Asachi“, Iasi, Romania</p>
         <p className={styles.date}>September 2002 - July 2003</p>
@@ -98,9 +98,8 @@ export const Skills = () => {
         <div className={styles.hobbies}>
         <h2 className={styles.title}>Interests and Hobbies</h2>
             <ul className={styles.ul}>
-            <li>Avid reader with a creative and empathetic approach to problem-solving.</li>
-            <li>Inspired by imaginative worlds in literature, applying innovative thinking to daily tasks.</li>
-            <li>Fascination for history, the universe and neuroscience, providing valuable perspectives for problem-solving.</li>
+            <li>Avid reader, inspired by imaginative worlds in literature, applying innovative thinking to daily tasks.</li>
+            <li>Fascination for history, the universe and neuroscience, providing valuable perspectives for problem - solving.</li>
             <li>Engaged in jewelry creation, emphasizing attention to detail, precision and design thinking.</li>
             </ul>
 

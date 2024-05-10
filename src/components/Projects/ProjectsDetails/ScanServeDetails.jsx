@@ -90,7 +90,7 @@ export const ScanServeDetails = () => {
      </div> 
     <div className={styles.info}>
       <p>Technologies Used: </p>
-      <p>React, Node.js, Express, MongoDB,  Socket.IO library</p>
+      <p>React, Tailwind Css, Lottie, Node.js, Express, Mongoose, MongoDB, bcrypt, jsonwebtecken (authentication and security), Multer, Socket.IO, Cloudinary</p>
       <p className={styles.gitHub}>GitHub Repository: <a href="https://github.com/andrii-kuznichenko/restaurant-app" target="_blank" rel="noreferrer">Scan & Serve</a></p>
       <p className={styles.liveApp}>Live Application: <a href="https://scan-service.onrender.com/" target="_blank" rel="noreferrer">Scan & Serve</a></p>
       <button className={styles.button} onClick={handleGoBack}>Go Back</button>

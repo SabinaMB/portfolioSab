@@ -157,18 +157,9 @@
 
 @media screen and (min-width: 701px) and (max-width: 1400px) {
 
-    .container {
-        grid-template-areas: 
-            'title path path'
-            'lottieContainer bootCamp image'
-            '. bootCamp goals';
-    }
 
     .bootCamp_p {
         width: 100%;
     }
-
-    .path_p {
-        width: 70%;
-    }
+    
 } 

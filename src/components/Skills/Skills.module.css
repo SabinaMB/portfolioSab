@@ -84,7 +84,7 @@ align-items: center;
 .education {
     grid-area: education;
     display: grid;
-    width:70%;
+    width:60%;
     margin: 0 auto;
 }
 
@@ -93,6 +93,7 @@ align-items: center;
     display: grid;
     width:fit-content;
     margin: 0 auto;
+    width: 50%;
 }
 
 .ul {

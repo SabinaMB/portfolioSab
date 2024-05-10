@@ -231,10 +231,11 @@
 }
 
 .info {
-    padding: 4rem;
-    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
     text-align: center; 
-    font-size: 2.5rem;
+    margin: 10rem auto;
+    max-width: 30rem;
 }
 
 .info p {
@@ -245,6 +246,7 @@
 .info a {
     color: var(--color-accent4); 
     text-decoration: none; 
+    font-size: 1.3rem;
 }
 
 .info a:hover {

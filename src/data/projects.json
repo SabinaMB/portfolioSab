@@ -3,8 +3,8 @@
     "title": "Scan & Serve",
     "imageSrc": "ScanServe/ScanServeLogo.png",
     "description": [ 
-      "The culminating project of our coding bootcamp, developed through collaborative efforts within a dedicated team.",
-      "Isn't just an app. It's a comprehensive solution aimed at improving restaurant operations' efficiency and enhancing the dining experience for customers.",
+      "The culminating project of our coding bootcamp, developed through collaborative efforts within a dedicated team of 4 persons.",
+      "It's a comprehensive solution aimed at improving restaurant operations' efficiency and enhancing the dining experience for customers.",
       "Whether you're a restaurant owner looking to streamline your services or a diner in search of a hassle-free meal, Scan & Serve caters to your needs."
   ],
     "readMoreLink": "/scan-serve-details"
@@ -13,13 +13,23 @@
   {
     "title": "My portfolio",
     "imageSrc": "MyPortfolio/myPortfolioImg.png",
-    "description": "My Portfolio is a personal website that showcases my work as a web developer. The site features a portfolio section with examples of my projects, a blog where I share my thoughts and experiences, and a contact page where visitors can get in touch with me. The site is designed to be clean, modern, and easy to navigate, with a focus on showcasing my skills and experience as a developer. My Portfolio is built using HTML, CSS, and JavaScript, and is hosted on GitHub Pages. The site is responsive and works well on desktop, tablet, and mobile devices.",
-    "readMoreLink": "/my-portfolio-details"
+    "description": ["Built with React, Lottie-web, EmailJS, Vite.",
+    "Note: My portfolio is a work in progress, with plans to add new projects and features while continually improving its design and functionality."
+  ],
+    "readMoreLink": null
   },
+
   {
     "title": "PetRecords",
     "imageSrc": "PetsRecords/PetsRecordsImg.jpg",
-    "description": "PetRecords is a comprehensive electronic health card designed for pets, connecting pet owners, veterinary doctors, and groomers seamlessly. With PetHealthTrack, veterinary doctors have exclusive access to manage and update pet medical records, ensuring accurate and up-to-date health information. Pet owners can easily add observations and notes about their pets' health, fostering collaboration and transparency in pet healthcare. Additionally, groomers can access relevant health information to provide personalized grooming services tailored to each pet's needs. Whether it's scheduling appointments, tracking vaccinations, managing grooming preferences, or monitoring ongoing treatments, PetMedRecords simplifies pet care management for all involved.",
+    "description": ["Currently working on.",
+    "A comprehensive electronic health card, connecting pet owners, veterinary doctors, and groomers seamlessly.",
+    "Exclusive Veterinary Access to manage and update pet medical records.",
+    "Pet owners can easily add observations and notes about their pets' health.",
+    "Groomers can access relevant health information to provide personalized grooming services tailored to each pet's needs.",
+    "Whether it's scheduling appointments, tracking vaccinations, managing grooming preferences or monitoring ongoing treatments, PetRecords simplifies pet care management for all involved.",
+    "Anticipated technologies for development: React, Node.js, MongoDB or PostgreSQL and authentication mechanisms."
+  ],
     "readMoreLink": "/pet-records-details"
   }
 ]

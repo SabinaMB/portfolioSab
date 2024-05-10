@@ -6,10 +6,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin: 0 auto;
     margin-top: 4rem;
-    max-width: 70%;
+    max-width: 55%;
     border-radius: 25px;
     border: 1px solid rgba(101, 100, 100, 0.4);
     box-shadow: 0 1px 10px rgba(101, 100, 100, 0.4);
@@ -50,6 +49,7 @@
     line-height: 2rem;
     text-wrap: pretty;
     hyphens: auto;
+    margin-bottom: 1rem;
 }
 
 .detailsBtn {
@@ -67,6 +67,16 @@
     color: var(--color-accent4);
     transition: color 0.5s;
 }
+
+.container:nth-child(2) .detailsBtn {
+   display: none;
+}
+
+.container:nth-child(3) .detailsBtn {
+    display: none;
+}
+
+
 
 @media screen and (max-width: 768px) {
     .container {

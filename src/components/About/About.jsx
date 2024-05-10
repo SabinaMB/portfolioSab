@@ -56,9 +56,6 @@ export const About = () => {
             <p className={styles.path_p}>
             As an avid Web Developer and Backend Explorer, my journey has been shaped by a rich background in Project Management, Quality Assurance and Communication. 
             </p>
-            <p className={styles.path_p}>
-             Coordinating the admission of foreign students, managing QA projects, organizing international conferences and engaging in product development equipped me with a unique blend of organizational and technical expertise.
-            </p>
         </div>
         
         <div className={styles.bootCamp}>
@@ -66,13 +63,13 @@ export const About = () => {
             Development Journey:
             </p>
             <p className={styles.bootCamp_p}>
-            During my 15-week Full Stack Web and App Development course at WBS CODING SCHOOL in Berlin from October 2023 to February 2024, I delved deep into PERN and MERN stack applications. 
+            During a 15-week Full Stack Web and App Development course at WBS CODING SCHOOL in Berlin from October 2023 to February 2024, I delved deep into PERN and MERN stack applications. 
             </p>
             <p className={styles.bootCamp_p}>
             Collaborating weekly on coding challenges and completing 14 projects sharpened my skills, while also familiarizing me with Agile methodologies and Scrum practices.
             </p>
             <p className={styles.bootCamp_p}>
-            In our final project I actively contributed in a four-member team to the development of 'Scan & Serve', a restaurant management app. This experience allowed me to showcase my adaptability and problem-solving abilities in a real-world setting. 
+            'Scan & Serve' is a complex restaurant management app, developed by our 4 members team.  This project showcased my adaptability and problem-solving skills in a real-world scenario. 
             </p>
         </div>
 
