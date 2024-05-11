@@ -155,12 +155,10 @@ align-items: center;
             'education'
             'hobbies';
         grid-row: max-content;
-        padding: 1rem;
     }
 
     .skillIcon {
         margin: 0.5rem;
-        
         }
     
     .icon {
@@ -172,9 +170,24 @@ align-items: center;
         width: 100%;
     }
 
+    .hobbies {
+        width: 70%;
+    }
+
     .ul {
         margin-left: 0.5rem;
         margin-top: 1rem;
     }
   }
 
+
+  @media screen and (max-width: 600px){
+    .container {
+        padding: 10rem 1rem 10rem;
+    }
+    .hobbies {
+        width: 100%;
+    }
+    
+
+  }

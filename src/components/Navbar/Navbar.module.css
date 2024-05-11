@@ -55,6 +55,31 @@
     border-radius: 20px;
 }
 
+/* .dropdownCV {
+    position: relative;
+    display: inline-block;
+  } */
+  
+  .dropdownCV:hover .CV {
+    display: block;
+    color: var(--color-accent4);
+    transition: color 0.5s;
+  }
+
+  .CV {
+    display: none;
+  }
+
+  .cvContent {
+    display: block;
+    text-decoration: none;
+  }
+
+  .cvContent:hover {
+    color: var(--color-accent4);
+    transition: color 0.5s;
+    text-decoration: none;
+}
 
 .cvBtn {
     font-size: clamp(1rem, 1.5vw, 1.2rem);
@@ -66,7 +91,6 @@
     color: whitesmoke;
     text-decoration: none;
 }
-
 
 
 .cvBtn:hover {
