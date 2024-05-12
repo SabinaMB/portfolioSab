@@ -35,8 +35,8 @@ export const Navbar = () => {
             <li className={styles.dropdownCV}>
             <button className={styles.cvBtn}>Download CV</button>
             <div className={styles.CV}>
-                <a href="https://portfolio-sabina.netlify.app/CV%20Sabina%20MB%20Eng.pdf" target="_blank" rel="noopener noreferrer" className={styles.cvContent}>Download CV English</a>
-                <a href="https://portfolio-sabina.netlify.app/CV%20Sabina%20MB%20De.pdf" target="_blank" rel="noopener noreferrer" className={styles.cvContent}>Download CV German</a>
+                <a href="https://portfolio-sabina.netlify.app/CV_SabinaMB_Eng.pdf" target="_blank" rel="noopener noreferrer" className={styles.cvContent}>Download CV English</a>
+                <a href="https://portfolio-sabina.netlify.app/CV_SabinaMB_De.pdf" target="_blank" rel="noopener noreferrer" className={styles.cvContent}>Download CV German</a>
            </div>
            
              </li>
