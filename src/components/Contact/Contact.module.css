@@ -5,74 +5,32 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--color-dark2);
-    padding: 10rem 2rem 10rem;
+    padding: 5rem 2rem 5rem;
   
 }
 
 
-.title {
+
+.link {
     font-size: 2.5ch;
     letter-spacing: 0.15ch;
     font-weight: 600;
     font-family: var(--font-oswald);
     padding: 1rem;
+    text-decoration: none;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 20rem;
-}
-
-.container label {
-    font-size: 2ch;
-    margin-bottom: 0.5rem;
-}
-
-.container input, .container textarea {
-    font-size: 2ch;
-    padding: 0.3rem;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    color: var(--color-dark2);
-}
-
-.container input[type="submit"] {
-    font-size: 2.5ch;
-    font-family: var(--font-oswald);
-    background-color: transparent;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 0 auto;
-    margin-top: 0.5rem;
-    color: whitesmoke;
-}
-
-.container input[type="submit"]:hover {
+.link:hover {
     color: var(--color-accent4);
     transition: color 0.5s;
 }
 
 
-.social {
+
+.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 4rem;
 }
 
-.icon {
-    font-size: 2.5rem;
-}
-
-.icon:hover {
-    transition: color 0.5s;
-    background-color: rgb(199, 11, 11);
-}
-
-@media screen and (max-width: 500px){
-    .form {
-        width: 15rem;
-    }
-}
