@@ -17,7 +17,7 @@
 }
 
 .navLink {
-    font-size: clamp(1rem, 3vw, 1.4rem);
+    font-size: clamp(1rem, 3vw, 1.2rem);
     font-weight: 600;
     text-decoration: none;
     position: relative;
@@ -55,10 +55,9 @@
     border-radius: 20px;
 }
 
-/* .dropdownCV {
+.dropdownCV {
     position: relative;
-    display: inline-block;
-  } */
+  }
   
   .dropdownCV:hover .CV {
     display: block;
@@ -68,11 +67,20 @@
 
   .CV {
     display: none;
+    position:absolute;
+    left: 50%;
+    top: 100%;
+    right: auto;
+    transform: translateX(-50%);
+    width: max-content;
+    
   }
 
   .cvContent {
     display: block;
     text-decoration: none;
+    
+    
   }
 
   .cvContent:hover {
@@ -81,22 +89,10 @@
     text-decoration: none;
 }
 
-.cvBtn {
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
-    padding-right: 0.3rem; 
-    padding-left: 0.3rem;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: transparent;
-    color: whitesmoke;
-    text-decoration: none;
-}
 
 
-.cvBtn:hover {
-    color: var(--color-accent4);
-    transition: color 0.5s;
-}
+
+
 
 
 @media screen and (max-width: 780px) {
@@ -126,7 +122,7 @@
         flex-direction: column;
         align-items: center;
         gap: 0.5rem;
-        background-image: linear-gradient(to top, rgba(7, 22, 31, 0.9), rgba(51, 51, 51, 0.9));
+        /* background-image: linear-gradient(to top, rgba(7, 22, 31, 0.9), rgba(51, 51, 51, 0.9)); */
 
     }
 

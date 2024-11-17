@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import {motion} from 'framer-motion';
+import {fadeInLeft, stagger} from '../../variants';
 import styles from './Navbar.module.css';
 import {getImageUrl} from '../../utils';
 
@@ -9,7 +11,10 @@ export const Navbar = () => {
   return (
     <div className={styles.navWrapper}>
     <nav className={styles.navbar}>
-    <a className={styles.navLink} href='/'>Home</a>
+    <motion.a className={styles.navLink} href='/' initial= 'hidden' animate= 'visible' variants= {fadeInLeft} transition= {{duration: 1}}>    
+    Home
+    </motion.a>
+
     <div className={styles.menu}>
 
         <img className={styles.menuIcon} 
@@ -33,7 +38,8 @@ export const Navbar = () => {
             </li>
             
             <li className={styles.dropdownCV}>
-            <button className={styles.cvBtn}>Download CV</button>
+           
+            <a href='#cv' className={styles.navLink}>Download CV</a>
             <div className={styles.CV}>
                 <a href="https://portfolio-sabina.netlify.app/CV_SabinaMB_Eng.pdf" target="_blank" rel="noopener noreferrer" className={styles.cvContent}>CV English</a>
                 <a href="https://portfolio-sabina.netlify.app/CV_SabinaMB_De.pdf" target="_blank" rel="noopener noreferrer" className={styles.cvContent}>CV German</a>
