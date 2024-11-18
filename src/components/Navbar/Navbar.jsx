@@ -45,7 +45,7 @@ export const Navbar = () => {
         />
 
         <motion.ul 
-        // key={isSmallScreen ? (menuOpen ? 'open' : 'closed'): 'largeScreen'}
+        key={isSmallScreen ? (menuOpen ? 'open' : 'closed'): 'largeScreen'}
         className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
         onClick={() => setMenuOpen(false)}
         initial='hidden'
