@@ -1,12 +1,25 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {motion} from 'framer-motion';
-import {fadeInLeft, fadeInRight, fadeInDown, stagger} from '../../variants';
+import {fadeInLeft, fadeInRight, fadeInDown, fadeInDownBurger} from '../../variants';
 import styles from './Navbar.module.css';
 import {getImageUrl} from '../../utils';
 
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] =useState(false);
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth <= 780);
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    
 
   return (
     <div className={styles.navWrapper}>
@@ -30,33 +43,31 @@ export const Navbar = () => {
         <motion.ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
         onClick={() => setMenuOpen(false)}
         initial='hidden'
-        animate= 'visible' 
-        variants= {fadeInRight}
-        transition= {{duration: 1}}
-        staggerChildren= {0.5}
-        >
-            <li>
-                <a href='#about' className={styles.navLink}>About</a>
-            </li>
-            <li>
+        animate= {menuOpen ? 'visible' : 'hidden'} 
+        variants= {isSmallScreen ? fadeInDownBurger : fadeInRight}
+        transition= {{duration: 1}}>
+
+        <motion.li variants={fadeInDownBurger} className={styles.navLink}>
+            <a href='#about' className={styles.navLink}>About</a>
+        </motion.li>
+        <motion.li variants={fadeInDownBurger} className={styles.navLink}>
                 <a href='#skills' className={styles.navLink}>Skills</a>
-            </li>
-            <li>
+        </motion.li>
+                <motion.li variants={fadeInDownBurger} className={styles.navLink}>
                 <a href='#projects' className={styles.navLink}>Projects</a>
-            </li>
-            <li>
+                </motion.li>
+                <motion.li variants={fadeInDownBurger} className={styles.navLink}>
                 <a href='#contact' className={styles.navLink}>Contact</a>
-            </li>
+                </motion.li>
             
-            <li  className={styles.dropdownCV}
-           
-            >
+            <motion.li className={styles.dropdownCV}
+            variants={fadeInDownBurger}>
             <a href='#cv' className={styles.navLink}>Download CV</a>
             <div className={styles.CV}>
                 <a href="https://portfolio-sabina.netlify.app/CV_SabinaMB_Eng.pdf" target="_blank" rel="noopener noreferrer" className={styles.cvContent}>CV English</a>
                 <a href="https://portfolio-sabina.netlify.app/CV_SabinaMB_De.pdf" target="_blank" rel="noopener noreferrer" className={styles.cvContent}>CV German</a>
-           </div>
-           </li>
+            </div>
+            </motion.li>
         </motion.ul>
        
     </div>
