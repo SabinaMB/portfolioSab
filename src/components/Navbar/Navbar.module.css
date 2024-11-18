@@ -22,7 +22,7 @@
     text-decoration: none;
     position: relative;
     background-color: none;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .navLink::after {

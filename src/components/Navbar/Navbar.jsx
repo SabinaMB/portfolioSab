@@ -44,7 +44,7 @@ export const Navbar = () => {
         variants= {fadeInDown}
         />
 
-        <motion.ul 
+    <motion.ul 
         key={isSmallScreen ? (menuOpen ? 'open' : 'closed'): 'largeScreen'}
         className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
         onClick={() => setMenuOpen(false)}
@@ -53,26 +53,26 @@ export const Navbar = () => {
         variants= {isSmallScreen ? fadeInDownBurger : fadeInRight}
         transition= {{duration: 1}}>
 
-        <motion.li variants={fadeInDownBurger} className={styles.navLink}>
+        <motion.li variants={fadeInDownBurger}>
         <a href='#about' className={styles.navLink}>About</a>
         </motion.li>
-        <motion.li variants={fadeInDownBurger} className={styles.navLink}>
+        <motion.li variants={fadeInDownBurger}>
         <a href='#skills' className={styles.navLink}>Skills</a>
         </motion.li>
-        <motion.li variants={fadeInDownBurger} className={styles.navLink}>
+        <motion.li variants={fadeInDownBurger}>
         <a href='#projects' className={styles.navLink}>Projects</a>
         </motion.li>
-        <motion.li variants={fadeInDownBurger} className={styles.navLink}>
+        <motion.li variants={fadeInDownBurger}>
         <a href='#contact' className={styles.navLink}>Contact</a>
         </motion.li>
-        <motion.li className={styles.dropdownCV} variants={fadeInDownBurger}>
+        <motion.li variants={fadeInDownBurger}>
         <a href='#cv' className={styles.navLink}>Download CV</a>
         <div className={styles.CV}>
                 <a href="https://portfolio-sabina.netlify.app/CV_SabinaMB_Eng.pdf" target="_blank" rel="noopener noreferrer" className={styles.cvContent}>CV English</a>
                 <a href="https://portfolio-sabina.netlify.app/CV_SabinaMB_De.pdf" target="_blank" rel="noopener noreferrer" className={styles.cvContent}>CV German</a>
         </div>
         </motion.li>
-        </motion.ul>
+    </motion.ul>
        
     </div>
     </nav>
