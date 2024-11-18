@@ -11,7 +11,11 @@ export const Navbar = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsSmallScreen(window.innerWidth <= 780);
+            const smallScreen = window.innerWidth <= 780;
+            setIsSmallScreen(smallScreen);
+            if (!smallScreen) {
+                setMenuOpen(false);
+            }
         };
 
         handleResize();
@@ -40,10 +44,12 @@ export const Navbar = () => {
         variants= {fadeInDown}
         />
 
-        <motion.ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
+        <motion.ul 
+        key={isSmallScreen ? (menuOpen ? 'open' : 'closed'): 'largeScreen'}
+        className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
         onClick={() => setMenuOpen(false)}
         initial='hidden'
-        animate= {menuOpen ? 'visible' : 'hidden'} 
+        animate= {isSmallScreen? (menuOpen ? 'visible' : 'hidden') : 'visible'} 
         variants= {isSmallScreen ? fadeInDownBurger : fadeInRight}
         transition= {{duration: 1}}>
 
