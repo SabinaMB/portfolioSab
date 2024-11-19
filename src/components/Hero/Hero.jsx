@@ -3,6 +3,8 @@ import {motion} from 'framer-motion'
 import {fadeInLeft, fadeInUp, stagger} from '../../variants';
 import { getImageUrl } from '../../utils'
 import styles from './Hero.module.css'
+import { useInView } from 'react-intersection-observer';
+
 
 
 
@@ -13,18 +15,28 @@ const scrollToAbout = () => {
   aboutSection.scrollIntoView({ behavior: 'smooth' });
 };
 
+const { ref, inView } = useInView({
+  triggerOnce: true,
+  threshold: 0.15,
+});
+
   return (
     <div className={styles.heroWrapper} style={{backgroundImage: `url(${getImageUrl('hero1.jpeg')})`}} >
-    <section className={styles.container}>
+    <motion.section className={styles.container}
+     ref={ref}
+    id='hero'
+     initial="hidden" 
+     animate={inView ? "visible" : 'hidden'}>
         <div className={styles.header}>
             <img src={getImageUrl('imgSab14.jpg')} alt="Sabina" className={styles.logo} 
-            variants={fadeInLeft} initial="hidden" animate="visible"/>  
+            variants={fadeInLeft} initial="hidden" 
+            animate={inView ? "visible" : 'hidden'}/>  
             <p className={styles.name}>Sabina Marian - Blanariu</p>
         </div>
        
         <motion.div className={styles.content} variants={stagger}
           initial="hidden"
-          animate="visible">
+          animate={inView ? "visible" : 'hidden'}>
           <motion.p className={styles.paragraph} variants={fadeInLeft}>I'm</motion.p>
           <motion.h2 className={styles.title} variants={fadeInLeft}>
             <span className={styles.title} style={{ color: 'var(--color-accent4)' }}>Sabina</span>, web developer</motion.h2>
@@ -32,7 +44,7 @@ const scrollToAbout = () => {
           <motion.button className={styles.aboutBtn} variants={fadeInUp} onClick={scrollToAbout}>Get to know me</motion.button>
         </motion.div>
       
-    </section>
+    </motion.section>
     </div>
   )
 }
