@@ -65,12 +65,17 @@ export const Navbar = () => {
         <motion.li variants={fadeInDownBurger}>
         <a href='#contact' className={styles.navLink}>Contact</a>
         </motion.li>
-        <motion.li variants={fadeInDownBurger}>
+        <motion.li variants={fadeInDownBurger} className={styles.dropdownCV}>
         <a href='#cv' className={styles.navLink}>Download CV</a>
-        <div className={styles.CV}>
+        <motion.div className={styles.CV}
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        exit={{ opacity: 0, scale: 0.95 }}
+        transition={{ duration: 0.3 }}>
+
                 <a href="https://portfolio-sabina.netlify.app/CV_SabinaMB_Eng.pdf" target="_blank" rel="noopener noreferrer" className={styles.cvContent}>CV English</a>
                 <a href="https://portfolio-sabina.netlify.app/CV_SabinaMB_De.pdf" target="_blank" rel="noopener noreferrer" className={styles.cvContent}>CV German</a>
-        </div>
+        </motion.div>
         </motion.li>
     </motion.ul>
        

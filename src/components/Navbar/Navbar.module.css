@@ -62,6 +62,7 @@
 
 .dropdownCV {
     position: relative;
+    
   }
   
   .dropdownCV:hover .CV {
@@ -72,21 +73,28 @@
 
   .CV {
     display: none;
-    position:absolute;
+    position: absolute;
     left: 50%;
-    top: 100%;
-    right: auto;
+    z-index: 10;
     transform: translateX(-50%);
     width: max-content;
-    
+   
   }
 
   .cvContent {
     display: block;
     text-decoration: none;
     
-    
+    left: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+    width: max-content;
+        
   }
+
+  .navLink:hover + .CV {
+    display: block;
+}
 
   .cvContent:hover {
     color: var(--color-accent4);
