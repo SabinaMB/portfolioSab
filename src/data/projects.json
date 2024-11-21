@@ -30,6 +30,6 @@
     "Whether it's scheduling appointments, tracking vaccinations, managing grooming preferences or monitoring ongoing treatments, PetRecords simplifies pet care management for all involved.",
     "Anticipated technologies for development: React, Node.js, MongoDB or PostgreSQL and authentication mechanisms."
   ],
-    "readMoreLink": "/pet-records-details"
+    "readMoreLink": null
   }
 ]

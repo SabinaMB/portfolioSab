@@ -10,6 +10,7 @@ import { fadeInLeft, fadeInContainer } from '../../variants';
 export const Projects = () => {
   const { ref, inView } = useInView({
     threshold: 0.2, 
+    triggerOnce: true,
   });
 
   return (
@@ -30,10 +31,10 @@ export const Projects = () => {
   );
 };
 
-const ProjectItem = ({ project }) => {
+const ProjectItem = ({ project, id }) => {
   const { ref, inView } = useInView({
-    // triggerOnce: true, 
-    threshold: 0.2,   
+    triggerOnce: true, 
+    threshold: id === 0 ? 0 : 0.2,   
   });
 
   return (

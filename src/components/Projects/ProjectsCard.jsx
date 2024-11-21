@@ -22,8 +22,9 @@ export const ProjectsCard = ({
         )) : <p className={styles.description}>{description}</p>}
 
 
-        {/* <p className={styles.description}>{description}</p> */}
+      {readMoreLink && (
         <button className={styles.detailsBtn} onClick={handleReadMoreClick}>Read more</button>
+      )}
         </div>
   )
 }

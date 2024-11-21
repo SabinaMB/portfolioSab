@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import {motion} from 'framer-motion';
-import {fadeInLeft, fadeInRight, stagger} from '../../variants';
+import {fadeInLeft, fadeInUp, fadeInRight, stagger} from '../../variants';
 import styles from './About.module.css';
 import { getImageUrl } from '../../utils';
 import animation from '../../../assets/scroll.json';
@@ -40,17 +40,17 @@ export const About = () => {
   }, []);
 
 const { ref: aboutMeRef, inView: aboutMeInView } = useInView({
-  // triggerOnce: true,
+  triggerOnce: true,
   threshold: 0.15,
 });
 
 const { ref: bootCampRef, inView: bootCampInView } = useInView({
-  // triggerOnce: true,
+  triggerOnce: true,
   threshold: 0.2,
 });
 
 const { ref: goalsRef, inView: goalsInView } = useInView({
-  // triggerOnce: true,
+  triggerOnce: true,
   threshold: 0.2,
 });
 
@@ -97,11 +97,11 @@ const { ref: goalsRef, inView: goalsInView } = useInView({
             </motion.p>
         </motion.div>
 
-        <motion.div className={styles.goals} variants={fadeInRight} 
+        <motion.div className={styles.goals} variants={fadeInUp} 
         ref={goalsRef}
         initial="hidden"
         animate={goalsInView ? "visible" : 'hidden'}>
-          <p className={styles.goals_p} variants={fadeInRight}>
+          <p className={styles.goals_p} variants={fadeInUp}>
           Long-term Goals:
           </p>
           <p className={styles.goals_p} >

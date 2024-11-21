@@ -131,6 +131,7 @@
         min-height: auto;
         line-height: 1.5rem;
         column-gap: 0;
+        padding: 5rem auto 5rem;
     }
 
     .goals_p {
