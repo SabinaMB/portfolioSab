@@ -20,3 +20,9 @@
     color: var(--color-accent4);
     margin-bottom: 2rem;
 }
+
+@media (max-width: 768px) {
+    .container {
+      padding: 5rem 1rem;
+    }
+  }

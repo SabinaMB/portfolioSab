@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import {motion} from 'framer-motion';
-import {fadeInLeft, fadeInUp, stagger} from '../../variants';
+import {fadeInLeft, fadeInRight, stagger} from '../../variants';
 import styles from './About.module.css';
 import { getImageUrl } from '../../utils';
 import animation from '../../../assets/scroll.json';
@@ -39,19 +39,29 @@ export const About = () => {
     };
   }, []);
 
-const { ref, inView } = useInView({
-  triggerOnce: true,
+const { ref: aboutMeRef, inView: aboutMeInView } = useInView({
+  // triggerOnce: true,
   threshold: 0.15,
+});
+
+const { ref: bootCampRef, inView: bootCampInView } = useInView({
+  // triggerOnce: true,
+  threshold: 0.2,
+});
+
+const { ref: goalsRef, inView: goalsInView } = useInView({
+  // triggerOnce: true,
+  threshold: 0.2,
 });
 
 
   return (
 
-    <motion.section 
-    ref={ref}
-    className={styles.container} id='about' 
+    <motion.section className={styles.container} 
+    ref={aboutMeRef}
+    id='about'
     initial="hidden" 
-    animate={inView ? "visible" : 'hidden'}>
+    animate={aboutMeInView ? "visible" : 'hidden'}>
          
         <div className={styles.titleContainer}>
          <p className={styles.title}>About me</p>
@@ -69,8 +79,9 @@ const { ref, inView } = useInView({
         
         <motion.div className={styles.bootCamp} 
         variants={stagger} 
+        ref={bootCampRef}
         initial="hidden" 
-        animate={inView ? "visible" : 'hidden'}
+        animate={bootCampInView ? "visible" : 'hidden'}
         >
             <motion.p className={styles.bootCamp_p} variants={fadeInLeft}>
             Development Journey:
@@ -86,17 +97,19 @@ const { ref, inView } = useInView({
             </motion.p>
         </motion.div>
 
-        <motion.div className={styles.goals} variants={stagger} initial="hidden"
-        animate={inView ? "visible" : 'hidden'}>
-          <motion.p className={styles.goals_p} variants={fadeInUp}>
+        <motion.div className={styles.goals} variants={fadeInRight} 
+        ref={goalsRef}
+        initial="hidden"
+        animate={goalsInView ? "visible" : 'hidden'}>
+          <p className={styles.goals_p} variants={fadeInRight}>
           Long-term Goals:
-          </motion.p>
-          <motion.p className={styles.goals_p} variants={fadeInUp} >
+          </p>
+          <p className={styles.goals_p} >
           I aspire to contribute to innovative projects, leveraging my technical expertise and organizational prowess. 
-          </motion.p>
-          <motion.p className={styles.goals_p} variants={fadeInUp}>
+          </p>
+          <p className={styles.goals_p}>
           My vision is to become an integral part of successful web development teams.
-          </motion.p>
+          </p>
         </motion.div>
         
         <figure className={styles.image}>

@@ -37,7 +37,6 @@ export const Skills = () => {
     <section className={styles.container}>
        
         <motion.div className={styles.techSkills} variants={fadeInLeft}>
-       
 
         <h2 className={styles.title}>Technical skills</h2>
         <div className={styles.iconsContainer}>
