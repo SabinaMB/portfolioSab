@@ -5,10 +5,13 @@
     flex-direction: column;
     align-items: center;
     background-color: var(--color-dark2);
-    /* padding: 10rem auto; */
-    height: 100vh;
+    background-image: url(../../../assets/contact4.jpg);
+    background-size: content;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 2000px rgba(28, 28, 28, 0.7);
+    min-height: 100vh;
     text-align: center;
-  
 }
 
 
@@ -19,14 +22,26 @@
     font-weight: 600;
     font-family: var(--font-oswald);
     color: var(--color-accent4); 
-    padding: 1rem;
+    margin-top: 1rem;
     text-decoration: none;
+    position:relative;
+    background-color: none;
 }
 
-.link:hover {
-    text-decoration: underline; 
+.link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: var(--color-accent4);
+    width:0;
+    transition: width 0.5s ease;
 }
 
+.link:hover::after {
+    width: 100%;
+}
 
 
 .contact {

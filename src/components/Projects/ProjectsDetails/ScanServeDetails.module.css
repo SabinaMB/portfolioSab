@@ -247,11 +247,31 @@
     color: var(--color-accent4); 
     text-decoration: none; 
     font-size: 1.3rem;
+    position:relative;
+    background-color: none;
 }
 
-.info a:hover {
-    text-decoration: underline; 
+.info a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    background-color: var(--color-accent4);
+    width:0;
+    transition: width 0.5s ease;
 }
+
+.info a:hover::after {
+    width: 100%;
+}
+
+
+/* .info a:hover {
+    text-decoration: underline; 
+} */
+
+
 
 .button {
     font-size: clamp(1rem, 5vw, 1.5rem);
