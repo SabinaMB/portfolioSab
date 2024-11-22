@@ -12,7 +12,7 @@ export const Skills = () => {
 
     const { ref: techSkillsRef, inView: techSkillsInView } = useInView({
         triggerOnce: true,
-        threshold: 0.2,
+        threshold: 0,
       });
       const { ref: experienceRef, inView: experienceInView } = useInView({
         threshold: 0.2,

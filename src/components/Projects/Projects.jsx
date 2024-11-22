@@ -9,12 +9,13 @@ import { fadeInLeft, fadeInContainer } from '../../variants';
 
 export const Projects = () => {
   const { ref, inView } = useInView({
-    threshold: 0.2, 
+    threshold: 0.1, 
     triggerOnce: true,
+    id: 'projects',
   });
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id='projects'>
       <h2 className={styles.title}>Projects</h2>
       <motion.div
         className={styles.project}
@@ -31,11 +32,13 @@ export const Projects = () => {
   );
 };
 
-const ProjectItem = ({ project, id }) => {
+
+const ProjectItem = ({ project }) => {
   const { ref, inView } = useInView({
     triggerOnce: true, 
-    threshold: id === 0 ? 0 : 0.2,   
+    threshold: 0.2, 
   });
+
 
   return (
     <motion.div
