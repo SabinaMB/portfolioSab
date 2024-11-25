@@ -13,7 +13,7 @@
   {
     "title": "My portfolio",
     "imageSrc": "MyPortfolio/myPortfolioImg.png",
-    "description": ["Built with React, Lottie-web, EmailJS, Vite.",
+    "description": ["Built with React, Lottie-web, Framer Motion, Vite.",
     "Note: My portfolio is a work in progress, with plans to add new projects and features while continually improving its design and functionality."
   ],
     "readMoreLink": null
