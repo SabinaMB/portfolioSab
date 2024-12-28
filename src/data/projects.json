@@ -11,7 +11,7 @@
 
   {
     "title": "Scan & Serve",
-    "imageSrc": "ScanServe/ScanServeLogo.png",
+    "imageSrc": "ScanServe/ScanServeLogo2.png",
     "description": [
       "The final project of the coding bootcamp I attended, developed collaboratively within a dedicated team of four.",
       "It's a comprehensive solution aimed at improving restaurant operations' efficiency and enhancing the dining experience for customers.",
@@ -32,7 +32,7 @@
 
   {
     "title": "PetRecords",
-    "imageSrc": "PetsRecords/PetsRecordsImg.jpg",
+    "imageSrc": "PetsRecords/PetsRecordsImg2.jpg",
     "description": [
       "Currently working on.",
       "A comprehensive electronic health card, connecting pet owners, veterinary doctors and groomers seamlessly.",

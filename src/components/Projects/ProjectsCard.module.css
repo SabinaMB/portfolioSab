@@ -1,87 +1,84 @@
+@import "../../vars.css";
 
-
-@import '../../vars.css';
-
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 4rem;
-    max-width: 55%;
-    border-radius: 25px;
-    border: 1px solid rgba(101, 100, 100, 0.4);
-    box-shadow: 0 1px 10px rgba(101, 100, 100, 0.4);
-    padding: 2rem;
-    overflow: hidden;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 4rem;
+  max-width: 55%;
+  border-radius: 25px;
+  border: 1px solid rgba(101, 100, 100, 0.4);
+  box-shadow: 0 1px 10px rgba(101, 100, 100, 0.4);
+  padding: 2rem;
+  overflow: hidden;
 }
 
-.container:first-child{
-    margin-top: 2rem;
+.container:first-child {
+  margin-top: 2rem;
 }
 
 .image {
-    width: auto;
-    max-width: 100%;
-    max-height: clamp(20rem, 25vw, 30rem);
-    border-radius: 1rem;
-    margin: 1rem;
+  width: auto;
+  max-width: 100%;
+  max-height: clamp(15rem, 20vw, 20rem);
+  border-radius: 1rem;
+  margin: 1rem;
 }
 
-.container:first-child .image{
-    max-height: clamp(7rem, 10vw, 15rem);
+/* .container:nth-of-type(4) .image {
+  max-height: 5rem;
+  border: 2px solid red;
 }
 
-.container:nth-child(3) .image{
-    max-height: clamp(10rem, 15vw, 15rem);
-}
+.container:nth-child(4) .image {
+  max-height: clamp(7rem, 10vw, 10rem);
+} */
 
-.title{
-    margin: 1.5rem;
-    font-size: 2.5ch;
-    font-weight: bolder;
-    letter-spacing: 0.15ch;
-    color: var(--color-accent4);
+.title {
+  margin: 1.5rem;
+  font-size: 2.5ch;
+  font-weight: bolder;
+  letter-spacing: 0.15ch;
+  color: var(--color-accent4);
 }
 
 .description {
-    font-size: 2ch;
-    line-height: 2rem;
-    text-wrap: pretty;
-    hyphens: auto;
-    margin-bottom: 1rem;
+  font-size: 2ch;
+  line-height: 2rem;
+  text-wrap: pretty;
+  hyphens: auto;
+  margin-bottom: 1rem;
 }
 
 .detailsBtn {
-    font-size: 2.5ch;
-    font-family: var(--font-oswald);
-    background-color: transparent;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 0 auto;
-    margin-top: 2rem;
+  font-size: 2.5ch;
+  font-family: var(--font-oswald);
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 2rem;
 }
 
 .detailsBtn:hover {
-    color: var(--color-accent4);
-    transition: color 0.5s;
+  color: var(--color-accent4);
+  transition: color 0.5s;
 }
 
 .container:nth-child(2) .detailsBtn {
-   display: none;
+  display: none;
 }
 
 .container:nth-child(3) .detailsBtn {
-    display: none;
+  display: none;
 }
 
-
-
 @media screen and (max-width: 768px) {
-    .container {
-        margin: 2rem auto; 
-        padding: 1rem;
-        max-width: 100%;
-    }
+  .container {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 100%;
+  }
 }
