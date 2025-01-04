@@ -1,34 +1,56 @@
-@import '../../vars.css';
+@import "../../vars.css";
 
 .container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--color-dark2);
-    background-image: url(../../../assets/contact8.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: inset 0 0 0 2000px rgba(28, 28, 28, 0.8);
-    text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-dark2);
+  background-image: url(../../../assets/contact8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px rgba(28, 28, 28, 0.8);
+  text-align: center;
 }
-
-
 
 .link {
-    font-size: 3ch;
-    letter-spacing: 0.15ch;
-    font-weight: 600;
-    font-family: var(--font-oswald);
-    color: var(--color-accent4); 
-    margin-top: 1rem;
-    text-decoration: none;
-    position:relative;
-    background-color: none;
+  font-size: 3ch;
+  letter-spacing: 0.15ch;
+  font-weight: 600;
+  font-family: var(--font-oswald);
+  color: var(--color-accent4);
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  position: relative;
+  background-color: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.link::after {
+.link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-dark2);
+  z-index: -1;
+  transition: left 0.5s ease;
+}
+
+.link:hover::before {
+  left: 0;
+}
+
+.link:hover {
+  color: whitesmoke;
+}
+/* .link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -41,14 +63,12 @@
 
 .link:hover::after {
     width: 100%;
-}
-
+} */
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 20rem;
 }
-
