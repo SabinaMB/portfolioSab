@@ -9,9 +9,16 @@ export const ChatBotDetails = () => {
   };
 
   return (
-    <div>
-      <p className={styles.title}>ChatBotDetails</p>
-      <button onClick={handleGoBack}>Go Back</button>
+    <div className={styles.container}>
+      <div className={styles.nameWrapper}>
+        <p className={styles.name}>
+          <span className={styles.spanName}>Chat.Bot:</span> a seamless user
+          experience
+        </p>
+      </div>
+      <div className={styles.projectWrapper}>
+        <button onClick={handleGoBack}>Go Back</button>
+      </div>
     </div>
   );
 };
