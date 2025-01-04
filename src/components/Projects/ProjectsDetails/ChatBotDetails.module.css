@@ -18,7 +18,7 @@
 
 .spanName {
   color: var(--color-accent4);
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: var(--font-oswald);
   margin-bottom: 1rem;
   font-weight: bolder;
@@ -40,13 +40,40 @@
 
 .projectWrapper {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
   padding: 6rem 2rem;
   flex-grow: 1;
 }
 
-.title {
-  color: red;
+.projectDescription {
+  display: flex;
+  width: 80%;
+  padding: 6rem 0;
+}
+
+.projectDescription .title {
+  width: 40%;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 0.15rem;
+  font-family: var(--font-oswald);
+  justify-self: left;
+  margin: 4rem 0;
+}
+
+.projectDescription p {
+  width: 60%;
+  align-items: center;
+  text-wrap: pretty;
+  hyphens: auto;
+  font-size: clamp(1.2rem, 1.5vw, 1.2rem);
+  line-height: 2rem;
+}
+
+.projectDescription span {
+  display: block;
+  margin-bottom: 1rem;
 }

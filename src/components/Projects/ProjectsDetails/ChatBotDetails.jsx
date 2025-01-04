@@ -17,6 +17,26 @@ export const ChatBotDetails = () => {
         </p>
       </div>
       <div className={styles.projectWrapper}>
+        <div className={styles.projectDescription}>
+          <p className={styles.title}>Why Choose Chat.Bot?</p>
+          <p>
+            <span>
+              <strong>User-Friendly Design</strong>: The app follows a simple
+              and minimalistic approach, making it easy to use for anyone.
+            </span>
+            <span>
+              <strong>OpenAI-Powered Responses</strong>: By leveraging the
+              OpenAI API, the chatbot delivers intelligent and context-aware
+              responses.
+            </span>
+            <span>
+              <strong>Responsive Layout</strong>: Designed to work well across
+              devices, the app adapts to desktop, tablet, and mobile screens,
+              providing a consistent experience regardless of your device.
+            </span>
+          </p>
+        </div>
+
         <button onClick={handleGoBack}>Go Back</button>
       </div>
     </div>

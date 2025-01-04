@@ -1,395 +1,396 @@
-@import '../../../vars.css';
+@import "../../../vars.css";
 
-
-
-
-.container{
-    color: var(--color-text);
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-dark2);
+.container {
+  color: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-dark2);
 }
 
 .nameWrapper {
-    height: 20rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-color: var(--color-dark);
+  height: 20rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: var(--color-dark);
 }
 
 .spanName {
-    color: var(--color-accent4);
-    font-size: 3.5rem;
-    font-family: var(--font-oswald);
-    margin-bottom: 1rem;
-    font-weight: bolder;
-    letter-spacing: 0.15rem;
-    font-family: var(--font-oswald);
-    z-index: 1000;
+  color: var(--color-accent4);
+  font-size: 3rem;
+  font-family: var(--font-oswald);
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  letter-spacing: 0.15rem;
+  font-family: var(--font-oswald);
+  z-index: 1000;
 }
 
 .name {
-    color: var(--color-accent4);
-    margin:0 auto;
-    margin-bottom: 0.3rem;
-    font-size: 2.5rem;
-    font-weight: bolder;
-    letter-spacing: 0.15rem;
-    font-family: var(--font-oswald);
-    z-index: 1000;
+  color: var(--color-accent4);
+  margin: 0 auto;
+  margin-bottom: 0.3rem;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  letter-spacing: 0.15rem;
+  font-family: var(--font-oswald);
+  z-index: 1000;
 }
 
 .projectWrapper {
-    width: 100%;
-    height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 6rem 2rem;
-    flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  flex-grow: 1;
 }
 
 .projectDescription {
-    display: flex;
-    width: 80%;
-    padding: 6rem 0;
+  display: flex;
+  /* width: 80%; */
+  padding: 6rem 0;
 }
 
 .projectDescription .title {
-    width: 40%;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    letter-spacing: 0.15rem;
-    font-family: var(--font-oswald);
-    justify-self: left;
-    margin: 4rem 0;
+  width: 40%;
+  align-items: center;
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  font-weight: bolder;
+  letter-spacing: 0.15rem;
+  font-family: var(--font-oswald);
+  justify-self: left;
+  margin: 4rem 0;
 }
 
 .projectDescription p {
-    width: 60%;
-    align-items: center;
-    text-wrap:pretty;
-    hyphens:auto;
-    font-size: 1.2rem;
-    line-height: 2rem;
-
+  width: 60%;
+  align-items: center;
+  text-wrap: pretty;
+  hyphens: auto;
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  line-height: 2rem;
 }
 
 .adminWrapper {
-    display:grid;
-    margin: 0 auto;
-    gap: 2rem;
-    column-gap: 3rem;
-    padding-top: 4rem;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: max-content;
-    grid-template-areas: 
-        'titleAdmin titleAdmin'
-        'feature1 feature2'
-        'imgSetup imgMenu'
-        'feature3 imgTables'
-        'feature4 feature4'
-        'imgOrders1 imgOrders2';
+  display: grid;
+  margin: 0 auto;
+  gap: 2rem;
+  column-gap: 3rem;
+  padding-top: 4rem;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: max-content;
+  grid-template-areas:
+    "titleAdmin titleAdmin"
+    "feature1 feature2"
+    "imgSetup imgMenu"
+    "feature3 imgTables"
+    "feature4 feature4"
+    "imgOrders1 imgOrders2";
 }
 
-
 .titleAdmin {
-    grid-area: titleAdmin;
-    font-size: 1.5rem;
-    font-family: var(--font-oswald);
-    justify-self: left;
+  grid-area: titleAdmin;
+  font-size: 1.5rem;
+  font-family: var(--font-oswald);
+  justify-self: left;
 }
 
 .feature1 {
-    grid-area: feature1;
-    text-wrap:pretty;
-    hyphens:auto;
-    font-size: 1.5rem;
-    line-height: 2rem;
+  grid-area: feature1;
+  text-wrap: pretty;
+  hyphens: auto;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .feature2 {
-    grid-area: feature2;
+  grid-area: feature2;
 }
 
 .feature3 {
-    grid-area: feature3;
-    text-wrap:pretty;
-    hyphens:auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  grid-area: feature3;
+  text-wrap: pretty;
+  hyphens: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .feature4 {
-    grid-area: feature4;
-    text-wrap:pretty;
-    hyphens:auto;
-    width: 70%;
+  grid-area: feature4;
+  text-wrap: pretty;
+  hyphens: auto;
+  width: 70%;
 }
 
 .imgSetup {
-    grid-area: imgSetup;
+  grid-area: imgSetup;
 }
 
 .imgMenu {
-    grid-area: imgMenu;
+  grid-area: imgMenu;
 }
 
 .imgTables {
-    grid-area: imgTables;
+  grid-area: imgTables;
 }
 
 .imgOrders1 {
-    grid-area: imgOrders1;
+  grid-area: imgOrders1;
 }
 
 .imgOrders2 {
-    grid-area: imgOrders2;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  grid-area: imgOrders2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-
 .img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 15px;
-    border: 2px solid whitesmoke;
-    transition: transform 0.3s ease-in-out;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+  border: 2px solid whitesmoke;
+  transition: transform 0.3s ease-in-out;
 }
 
 .img:hover {
-    transform: scale(1.2);
-    z-index: 1;
+  transform: scale(1.2);
+  z-index: 1;
 }
 
 .guestWrapper {
-    display:grid;
-    margin: 0 auto;
-    gap: 2rem;
-    column-gap: 0.5rem;
-    padding-top: 6rem;
-    grid-template-columns: 35% 30% 35%;
-    grid-template-rows: max-content;
-    grid-template-areas: 
-    'titleGuests titleGuests titleGuests'
-    'imgUser feature5 imgOrder'
-    'imgUser feature6 imgOrder'
-    'imgUser feature7 imgOrder';
-    grid-gap: 3rem;
+  display: grid;
+  margin: 0 auto;
+  gap: 2rem;
+  column-gap: 0.5rem;
+  padding-top: 6rem;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-rows: max-content;
+  grid-template-areas:
+    "titleGuests titleGuests titleGuests"
+    "imgUser feature5 imgOrder"
+    "imgUser feature6 imgOrder"
+    "imgUser feature7 imgOrder";
+  grid-gap: 3rem;
 }
 
 .titleGuests {
-    grid-area: titleGuests;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    letter-spacing: 0.15rem;
-    font-family: var(--font-oswald);
-    justify-self: left;
+  grid-area: titleGuests;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 0.15rem;
+  font-family: var(--font-oswald);
+  justify-self: left;
 }
 
-.feature{
-    text-wrap:pretty;
-    hyphens:auto;
-    font-size: 1.1rem;
-    line-height: 2rem;
-
+.feature {
+  text-wrap: pretty;
+  hyphens: auto;
+  font-size: 1.1rem;
+  line-height: 2rem;
 }
 .feature5 {
-    grid-area: feature5;
+  grid-area: feature5;
 }
 
 .feature6 {
-    grid-area: feature6;
+  grid-area: feature6;
 }
 
 .feature7 {
-    grid-area: feature7;
+  grid-area: feature7;
 }
 
 .imgOrder {
-    grid-area: imgOrder;
-    object-fit: cover;
-    width: 100%;
-    max-width: 20rem;
-    height:auto;
-    border-radius: 15px;
+  grid-area: imgOrder;
+  object-fit: cover;
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+  border-radius: 15px;
 }
 
 .imgUser {
-    grid-area: imgUser;
-    object-fit: cover;
-    width: 100%;
-    max-width: 20rem;
-    height:auto;
-    border-radius: 15px;
+  grid-area: imgUser;
+  object-fit: cover;
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+  border-radius: 15px;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    text-align: center; 
-    margin: 10rem auto;
-    max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10rem auto;
+  max-width: 30rem;
 }
 
 .info p {
-    margin: 1rem 0; 
-    font-size: 1.2rem;
+  margin: 1rem 0;
+  font-size: 1.2rem;
 }
 
 .info a {
-    color: var(--color-accent4); 
-    text-decoration: none; 
-    font-size: 1.3rem;
-    position:relative;
-    background-color: none;
+  color: var(--color-accent4);
+  text-decoration: none;
+  font-size: 1.3rem;
+  position: relative;
+  background-color: none;
 }
 
 .info a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    height: 2px;
-    background-color: var(--color-accent4);
-    width:0;
-    transition: width 0.5s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  background-color: var(--color-accent4);
+  width: 0;
+  transition: width 0.5s ease;
 }
 
 .info a:hover::after {
-    width: 100%;
+  width: 100%;
 }
-
 
 /* .info a:hover {
     text-decoration: underline; 
 } */
 
-
-
 .button {
-    font-size: clamp(1rem, 5vw, 1.5rem);
-    font-family: var(--font-oswald);
-    background-color: transparent;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 0 auto;
-    margin-top: 2.5rem;
+  font-size: clamp(1rem, 5vw, 1.5rem);
+  font-family: var(--font-oswald);
+  background-color: transparent;
+  color: var(--color-accent4);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-dark);
+  z-index: -1;
+  transition: left 0.5s ease;
+}
+
+.button:hover::before {
+  left: 0;
 }
 
 .button:hover {
-    color: var(--color-accent4);
-    transition: color 0.5s;
+  color: whitesmoke;
 }
 
+@media screen and (max-width: 1200px) {
+  .name {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
 
+  .spanName {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .projectDescription {
+    width: 100%;
+    padding: 2rem 0;
+  }
 
-@media  screen and (max-width: 1200px) {
+  .projectDescription title {
+    font-size: 1.2rem;
+  }
 
-    .name {
-        font-size: clamp(1.5rem , 5vw, 2rem);
-        width: 100%;
-        text-align: center;
-        margin-bottom: 0;
-    }
+  .projectDescription p {
+    font-size: 0.9rem;
+    padding: 0;
+  }
 
-    .spanName {
-        font-size: clamp(2rem , 5vw, 2.5rem);
-        width: 100%;
-        margin-bottom: 0;
-    }
-    .projectDescription {
-        width: 100%;
-        padding: 2rem 0;
-    }
-
-    .projectDescription title {
-        font-size: 1.2rem;
-    }
-
-    .projectDescription p {
-        font-size: 0.9rem;
-        padding: 0;
-    }
-
-    .img:hover {
+  .img:hover {
     transform: none;
-    }
+  }
 
-    .adminWrapper {
-        display:grid;
-        margin: 0 auto;
-        row-gap: 2rem;
-        padding-top: 4rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content;
-        grid-template-areas: 
-            'titleAdmin'
-            'feature1' 
-            'imgSetup'
-            'feature2'
-            'imgMenu'
-            'feature3'
-            'imgTables'
-            'feature4'
-            'imgOrders1'
-            'imgOrders2';
-    } 
-    
-    .guestWrapper {
-        display:grid;
-        margin: 0 auto;
-        padding-top: 6rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content;
-        grid-template-areas: 
-        'titleGuests'
-        'feature5' 
-        'feature6'
-        'imgUser'
-        'feature7'
-        'imgOrder';
-        row-gap: 1rem;
-    }
-    
-    .feature4 {
-        width: 100%;
-    }
+  .adminWrapper {
+    display: grid;
+    margin: 0 auto;
+    row-gap: 2rem;
+    padding-top: 4rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    grid-template-areas:
+      "titleAdmin"
+      "feature1"
+      "imgSetup"
+      "feature2"
+      "imgMenu"
+      "feature3"
+      "imgTables"
+      "feature4"
+      "imgOrders1"
+      "imgOrders2";
+  }
 
-    .imgOrder,
-    .imgUser {
-        margin: 0 auto;
-    }
+  .guestWrapper {
+    display: grid;
+    margin: 0 auto;
+    padding-top: 6rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    grid-template-areas:
+      "titleGuests"
+      "feature5"
+      "feature6"
+      "imgUser"
+      "feature7"
+      "imgOrder";
+    row-gap: 1rem;
+  }
 
-} 
+  .feature4 {
+    width: 100%;
+  }
+
+  .imgOrder,
+  .imgUser {
+    margin: 0 auto;
+  }
+}
 
 @media screen and (max-width: 800px) {
+  .projectDescription {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 0;
+  }
 
-    .projectDescription {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 2rem 0;
-    }
+  .projectDescription .title {
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
 
-    .projectDescription .title {
-        width: 100%;
-        font-size: 1.2rem;
-        margin: 1rem 0;
-    }
-
-    .projectDescription p {
-        width: 100%;
-        font-size: 1rem;
-        padding: 0;
-    }
-
+  .projectDescription p {
+    width: 100%;
+    padding: 0;
+  }
 }
-   
