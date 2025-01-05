@@ -47,14 +47,14 @@
 
 .projectDescription {
   display: flex;
-  width: 80%;
+  /* width: 80%; */
   padding: 6rem 0;
 }
 
 .projectDescription .title {
   width: 40%;
   align-items: center;
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 1.5vw, 2rem);
   font-weight: bolder;
   letter-spacing: 0.15rem;
   font-family: var(--font-oswald);
@@ -92,7 +92,7 @@
   align-items: center;
   position: relative;
   transition: transform 0.3s ease-in-out;
-  flex: 1 1 auto;
+  flex: 1 1 30rem;
 }
 
 .imgDescription {
@@ -103,7 +103,7 @@
   hyphens: auto;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 20rem;
   padding-top: 1rem;
 }
 
@@ -201,4 +201,34 @@
 
 .button:hover {
   color: whitesmoke;
+}
+
+@media screen and (max-width: 500px) {
+  .spanName::after {
+    content: "\A"; /*Break the line */
+    white-space: pre; /* To keep the line breaks */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .name {
+    text-align: left;
+  }
+  .projectDescription {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .projectDescription .title {
+    width: 100%;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+  }
+
+  .projectDescription p {
+    width: 100%;
+    padding: 0;
+  }
 }

@@ -262,10 +262,6 @@
   width: 100%;
 }
 
-/* .info a:hover {
-    text-decoration: underline; 
-} */
-
 .button {
   font-size: clamp(1rem, 5vw, 1.5rem);
   font-family: var(--font-oswald);
@@ -370,7 +366,12 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
+  .spanName::after {
+    content: "\A"; /*Break the line */
+    white-space: pre; /* To keep the line breaks */
+  }
+
   .projectDescription {
     display: flex;
     flex-direction: column;
