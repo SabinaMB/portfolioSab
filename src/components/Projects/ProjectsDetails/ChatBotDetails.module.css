@@ -76,6 +76,61 @@
   margin-bottom: 1rem;
 }
 
+.imgWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.imgWrapper > figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  flex: 1 1 auto;
+}
+
+.imgDescription {
+  text-align: center;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  line-height: 2rem;
+  text-wrap: pretty;
+  hyphens: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  max-width: 30rem;
+  border-radius: 6px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.imgV {
+  width: 100%;
+  height: auto;
+  max-width: 20rem;
+  border-radius: 6px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.imgWrapper > figure:hover {
+  transform: scale(1.3);
+  z-index: 2;
+  position: relative;
+}
+
 .info {
   display: flex;
   flex-direction: column;

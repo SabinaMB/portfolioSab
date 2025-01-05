@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./ChatBotDetails.module.css";
+import { getImageUrl } from "../../../utils";
 
 export const ChatBotDetails = () => {
   const navigate = useNavigate();
@@ -36,6 +37,49 @@ export const ChatBotDetails = () => {
             </span>
           </p>
         </div>
+
+        <div className={styles.imgWrapper}>
+          <figure>
+            <img
+              src={getImageUrl("ChatBot/chatBotStart2.png")}
+              className={styles.img}
+              alt="Chat.Bot starting page"
+            />
+          </figure>
+
+          <figure>
+            <img
+              src={getImageUrl("ChatBot/chatBotApp.png")}
+              className={styles.img}
+              alt="Chat.Bot chatting page on big screens"
+            />
+            <figcaption className={styles.imgDescription}>
+              A full-screen layout showing the chatbot's clean and simple
+              design.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={getImageUrl("ChatBot/chatBotApp2.png")}
+              className={styles.img}
+              alt="Chat.Bot chatting page with emojis"
+            />
+          </figure>
+
+          <figure>
+            <img
+              src={getImageUrl("ChatBot/chatBotApp3.png")}
+              className={styles.imgV}
+              alt="Chat.Bot on small screens"
+            />
+            <figcaption className={styles.imgDescription}>
+              A compact, vertical interface designed for smaller screens and
+              on-the-go usage.
+            </figcaption>
+          </figure>
+        </div>
+
         <div className={styles.info}>
           <p>Technologies Used: </p>
           <p>
