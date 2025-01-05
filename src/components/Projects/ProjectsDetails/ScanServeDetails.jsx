@@ -21,12 +21,16 @@ export const ScanServeDetails = () => {
         <div className={styles.projectDescription}>
           <p className={styles.title}>Why Choose Scan & Serve?</p>
           <p>
-            Scan & Serve isn't just an app; it's a comprehensive solution aimed
-            at improving restaurant operations' efficiency and enhancing the
-            dining experience for customers.
-            <br /> Whether you're a restaurant owner looking to streamline your
-            services or a diner in search of a hassle-free meal, Scan & Serve
-            caters to your needs.
+            <span>
+              Scan & Serve isn't just an app; it's a comprehensive solution
+              aimed at improving restaurant operations' efficiency and enhancing
+              the dining experience for customers.
+            </span>
+            <span>
+              Whether you're a restaurant owner looking to streamline your
+              services or a diner in search of a hassle-free meal, Scan & Serve
+              caters to your needs.
+            </span>
           </p>
         </div>
 

@@ -36,8 +36,41 @@ export const ChatBotDetails = () => {
             </span>
           </p>
         </div>
-
-        <button onClick={handleGoBack}>Go Back</button>
+        <div className={styles.info}>
+          <p>Technologies Used: </p>
+          <p>
+            React, Framer Motion, Vite, OpenAI API
+            <br />
+            @emoji-mart/react (for easy integration of emoji support in the chat
+            interface)
+            <br />
+            uuid (for unique identifiers to track user sessions and
+            interactions)
+          </p>
+          <p className={styles.gitHub}>
+            GitHub Repository:{" "}
+            <a
+              href="https://github.com/SabinaMB/chatBot"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Chat.Bot
+            </a>
+          </p>
+          <p className={styles.liveApp}>
+            Live Application:{" "}
+            <a
+              href="https://chat-bot-s.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Chat.Bot
+            </a>
+          </p>
+          <button className={styles.button} onClick={handleGoBack}>
+            Go Back
+          </button>
+        </div>
       </div>
     </div>
   );
