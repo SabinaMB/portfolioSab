@@ -20,50 +20,35 @@
   font-weight: 600;
   font-family: var(--font-oswald);
   color: var(--color-accent4);
-  margin-top: 1rem;
-  padding: 1rem;
+  margin-top: 1.5rem;
+  padding: 0.3rem;
   border-radius: 10px;
   text-decoration: none;
   position: relative;
   background-color: none;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 1;
 }
 
-.link::before {
+.link::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background-color: var(--color-dark2);
-  z-index: -1;
-  transition: left 0.5s ease;
-}
-
-.link:hover::before {
   left: 0;
+  bottom: -2px;
+  height: 2px;
+  background-color: var(--color-accent4);
+  width: 0;
+  transition: width 0.5s ease;
 }
 
-.link:hover {
+/* .link:hover {
   color: whitesmoke;
-}
-/* .link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    height: 2px;
-    background-color: var(--color-accent4);
-    width:0;
-    transition: width 0.5s ease;
-}
+} */
 
 .link:hover::after {
-    width: 100%;
-} */
+  width: 100%;
+}
 
 .contact {
   display: flex;
