@@ -5,13 +5,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: var(--color-dark2);
   background-image: url(../../../assets/contact8.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: inset 0 0 0 2000px rgba(28, 28, 28, 0.8);
-  text-align: center;
 }
 
 .link {
@@ -42,10 +42,6 @@
   transition: width 0.5s ease;
 }
 
-/* .link:hover {
-  color: whitesmoke;
-} */
-
 .link:hover::after {
   width: 100%;
 }
@@ -54,6 +50,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
-  padding-top: 20rem;
+  /* padding-top: 20rem; */
 }
