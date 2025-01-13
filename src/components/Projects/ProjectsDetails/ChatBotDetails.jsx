@@ -111,7 +111,11 @@ export const ChatBotDetails = () => {
               Chat.Bot
             </a>
           </p>
-          <button className={styles.button} onClick={handleGoBack}>
+          <button
+            className={styles.button}
+            onClick={handleGoBack}
+            style={{ backgroundImage: `url(${getImageUrl("Button.jpeg")})` }}
+          >
             Go Back
           </button>
         </div>
