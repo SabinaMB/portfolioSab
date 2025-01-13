@@ -49,7 +49,7 @@ export const ChatBotDetails = () => {
 
           <figure>
             <img
-              src={getImageUrl("ChatBot/chatBotApp.png")}
+              src={getImageUrl("ChatBot/chatWind11.png")}
               className={styles.img}
               alt="Chat.Bot chatting page on big screens"
             />
@@ -61,7 +61,7 @@ export const ChatBotDetails = () => {
 
           <figure>
             <img
-              src={getImageUrl("ChatBot/chatBotApp2.png")}
+              src={getImageUrl("ChatBot/chatWind22.png")}
               className={styles.img}
               alt="Chat.Bot chatting page with emojis"
             />
@@ -69,7 +69,7 @@ export const ChatBotDetails = () => {
 
           <figure>
             <img
-              src={getImageUrl("ChatBot/chatBotApp3.png")}
+              src={getImageUrl("ChatBot/chatWind33.png")}
               className={styles.imgV}
               alt="Chat.Bot on small screens"
             />
