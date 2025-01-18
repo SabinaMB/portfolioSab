@@ -1,5 +1,15 @@
 [
   {
+    "title": "Number guessing",
+    "imageSrc": "GuessNr/nrGuess11.png",
+    "description": [
+      "A simple guessing game created to practice my JavaScript skills."
+    ],
+    "readMoreLink": "/number-guessing-details",
+    "visible": true
+  },
+
+  {
     "title": "Chat.Bot",
     "imageSrc": "ChatBot/chatBotStart.png",
     "description": [
