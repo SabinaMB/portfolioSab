@@ -10,7 +10,6 @@ import {
   itemVariants,
 } from "../../variants";
 import styles from "./About.module.css";
-import { getImageUrl } from "../../utils";
 import animation from "../../../assets/scroll.json";
 import lottie from "lottie-web";
 import { useInView } from "react-intersection-observer";
