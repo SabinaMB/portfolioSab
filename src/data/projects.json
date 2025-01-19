@@ -1,6 +1,6 @@
 [
   {
-    "title": "Number guessing",
+    "title": "guess.Number",
     "imageSrc": "GuessNr/nrGuess11.png",
     "description": [
       "A simple guessing game created to practice my JavaScript skills."
