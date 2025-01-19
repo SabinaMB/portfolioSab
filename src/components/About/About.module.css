@@ -9,9 +9,9 @@
   grid-template-columns: min-content 1fr 1fr;
   grid-template-rows: max-content; /* min-content 1fr min-content */
   grid-template-areas:
-    "title bCamp image"
-    "lottieContainer path image"
-    ". path goals";
+    "title bCamp techSkills"
+    "lottieContainer path techSkills"
+    ". path techSkills";
   max-width: 1500px;
 }
 
@@ -82,36 +82,61 @@
   height: 100%;
 }
 
-.image {
-  grid-area: image;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+.titleSkills {
+  align-self: center;
+  justify-self: center;
+  margin: 0.5rem;
+  font-size: 2.6ch;
+  letter-spacing: 0.15ch;
+  font-weight: 500;
+  font-family: var(--font-oswald);
+  color: var(--color-accent4);
 }
 
-.imgSab {
-  width: clamp(15rem, 20vw, 20rem);
-  border-radius: 50%;
-}
-
-.goals {
-  grid-area: goals;
+.techSkills {
   display: grid;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-items: center;
+  grid-area: techSkills;
+  row-gap: 1rem;
+  margin: 0 auto;
 }
 
-.goals_p {
-  width: 85%;
+.iconsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skillIcon {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+.techSkills {
+  border-radius: 25px;
+  border: 1px solid rgba(101, 100, 100, 0.4);
+  box-shadow: 0 1px 10px rgba(101, 100, 100, 0.4);
+  padding: 2rem;
+  position: relative;
+  line-height: 2rem;
+}
+
+.techSkills::after {
+  content: "";
+  position: absolute;
+  width: 100%;
   height: 100%;
-  text-align: justify;
-  hyphens: auto;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 1px rgba(101, 100, 100, 0.1);
 }
 
 @media screen and (max-width: 700px) {
@@ -127,10 +152,6 @@
     line-height: 1.5rem;
     column-gap: 0;
     padding: 5rem auto 5rem;
-  }
-
-  .goals_p {
-    width: 100%;
   }
 
   .lottieContainer {

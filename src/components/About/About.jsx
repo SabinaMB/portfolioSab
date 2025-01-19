@@ -7,6 +7,10 @@ import animation from "../../../assets/scroll.json";
 import lottie from "lottie-web";
 import { useInView } from "react-intersection-observer";
 
+import * as FaIcons from "react-icons/fa";
+import * as SiIcons from "react-icons/si";
+import skills from "../../data/skills.json";
+
 export const About = () => {
   const containerRef = useRef();
   const aboutRef = useRef();
@@ -93,33 +97,27 @@ export const About = () => {
         </motion.p>
       </motion.div>
 
-      <motion.div
-        className={styles.goals}
-        variants={fadeInUp}
-        ref={goalsRef}
-        initial="hidden"
-        animate={goalsInView ? "visible" : "hidden"}
-      >
-        <p className={styles.goals_p} variants={fadeInUp}>
-          Long-term Goals:
-        </p>
-        <p className={styles.goals_p}>
-          I aspire to contribute to innovative projects, leveraging my technical
-          expertise and organizational prowess.
-        </p>
-        <p className={styles.goals_p}>
-          My vision is to become an integral part of successful web development
-          teams.
-        </p>
+      <motion.div className={styles.techSkills} variants={fadeInLeft}>
+        <h2 className={styles.titleSkills}>Technical skills</h2>
+        <div className={styles.iconsContainer}>
+          {skills.map((skill, id) => {
+            let IconComponent;
+            if (skill.icon.startsWith("Fa")) {
+              IconComponent = FaIcons[skill.icon];
+            } else if (skill.icon.startsWith("Si")) {
+              IconComponent = SiIcons[skill.icon];
+            }
+            return (
+              <figure key={id}>
+                <div className={styles.skillIcon}>
+                  {IconComponent && <IconComponent className={styles.icon} />}
+                  <p className={styles.skillName}>{skill.name}</p>
+                </div>
+              </figure>
+            );
+          })}
+        </div>
       </motion.div>
-
-      <figure className={styles.image}>
-        <img
-          src={getImageUrl("imgSab8.jpg")}
-          alt="Sabina"
-          className={styles.imgSab}
-        />
-      </figure>
     </motion.section>
   );
 };
