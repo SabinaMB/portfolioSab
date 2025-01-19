@@ -82,13 +82,13 @@ export const GuessNrDetails = () => {
         <div className={styles.info}>
           <p>Technologies Used: </p>
           <p>
-            React, Framer Motion, Vite, OpenAI API
-            <br />
-            @emoji-mart/react (for easy integration of emoji support in the chat
-            interface)
-            <br />
-            uuid (for unique identifiers to track user sessions and
-            interactions)
+            <strong>HTML:</strong> Structured the layout of the game.
+            <strong>CSS:</strong> Styled the game with hover effects,
+            animations, and responsive design.
+            <strong>JavaScript:</strong>Implemented game logic, event listeners,
+            state management with reusable functions for modular code.
+            <strong>Confetti.js:</strong> Added celebratory confetti animations
+            to enhance the user experience.
           </p>
           <p className={styles.gitHub}>
             GitHub Repository:{" "}
