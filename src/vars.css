@@ -1,34 +1,29 @@
 :root {
-    --color-text:whitesmoke;
-    --color-text2: rgb(230, 225, 225);
-    --color-text3: rgb(241, 211, 211);
+  --color-text: whitesmoke;
+  --color-text2: rgb(230, 225, 225);
+  --color-text3: rgb(241, 211, 211);
 
-    --color-accent1: #fadd3b;
-    --color-accent2: #00cdcd;
-    --color-accent3: #009acd;
-    --color-accent4: #ff0000;
-    --color-accent5: #c80815;
-    --color-accent6: #009acd;
+  --color-accent1: #fadd3b;
+  --color-accent2: #00cdcd;
+  --color-accent3: #009acd;
+  --color-accent4: #ff0000;
+  --color-accent5: #c80815;
+  --color-accent6: #009acd;
 
-    --color-bg1: #052538;
-    --color-bg2: #f0c9c9;
-    --color-bg3: #f34a4a;
-    --color-bg3: #5e0707;
+  --color-bg1: #052538;
+  --color-bg2: #f0c9c9;
+  --color-bg3: #f34a4a;
 
+  --color-dark: #081b29;
+  --color-dark2: #090811;
 
-    --color-dark: #081b29;
-    --color-dark2: #090811;
+  --color-light: #f0c9c9;
 
-    --color-light: #f0c9c9;
-
-   
-    --font-outfit: 'Outfit', sans-serif;
-    --font-roboto: 'Roboto', sans-serif;
-    --font-sans: 'Open-Sans', sans-serif;
-    --font-alegreya: 'Alegreya', sans-serif;
-    --font-montserrat: 'Montserrat', sans-serif;
-    --font-barlow: 'Barlow-Condensed', sans-serif;
-    --font-oswald: 'Oswald', sans-serif;
-    
+  --font-outfit: "Outfit", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-sans: "Open-Sans", sans-serif;
+  --font-alegreya: "Alegreya", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-barlow: "Barlow-Condensed", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
 }
-
