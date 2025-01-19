@@ -1,6 +1,14 @@
 import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { fadeInLeft, fadeInUp, fadeInRight, stagger } from "../../variants";
+import {
+  fadeInLeft,
+  fadeInUp,
+  fadeInDown,
+  fadeInRight,
+  stagger,
+  fadeInContainer,
+  itemVariants,
+} from "../../variants";
 import styles from "./About.module.css";
 import { getImageUrl } from "../../utils";
 import animation from "../../../assets/scroll.json";
@@ -44,46 +52,52 @@ export const About = () => {
     threshold: 0.15,
   });
 
-  const { ref: bootCampRef, inView: bootCampInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
   return (
     <motion.section
       className={styles.container}
       ref={aboutMeRef}
       id="about"
+      variants={fadeInContainer}
       initial="hidden"
       animate={aboutMeInView ? "visible" : "hidden"}
     >
-      <div className={styles.titleContainer}>
+      <motion.div
+        className={styles.titleContainer}
+        variants={fadeInDown}
+        transition={{ duration: 0.5 }}
+      >
         <p className={styles.title}>About me</p>
-      </div>
+      </motion.div>
 
-      <div className={styles.lottieWrapper}>
+      <motion.div
+        className={styles.lottieWrapper}
+        variants={fadeInUp}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
         <div ref={containerRef} className={styles.lottieContainer}></div>
-      </div>
+      </motion.div>
 
-      <div className={styles.bCamp}>
+      <motion.div
+        className={styles.bCamp}
+        variants={fadeInLeft}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
         <p className={styles.bCamp_p}>
           I am a <strong>Web Developer</strong> passionate about{" "}
-          <strong>Frontend Development</strong> specializing in{" "}
-          <strong>React.js</strong> and <strong>JavaScript</strong>.<br /> After
-          completing a Full Stack Web Development bootcamp at WBS CODING SCHOOL,
-          I've continued to refine my skills through self-guided learning and
-          online courses.
+          <strong>Frontend Development</strong>, specializing in{" "}
+          <strong>React.js</strong> and <strong>JavaScript</strong>.
+          <br /> After completing a Full Stack Web Development bootcamp at WBS
+          CODING SCHOOL, I've continued to refine my skills through self-guided
+          learning and online courses.
         </p>
-      </div>
+      </motion.div>
 
       <motion.div
         className={styles.path}
-        variants={stagger}
-        ref={bootCampRef}
-        initial="hidden"
-        animate={bootCampInView ? "visible" : "hidden"}
+        variants={fadeInRight}
+        transition={{ duration: 0.5, delay: 0.7 }}
       >
-        <motion.p className={styles.path_p} variants={fadeInLeft}>
+        <motion.p className={styles.path_p}>
           With a background in Project Management and Quality Assurance, I bring
           a wealth of experience in team collaboration, client communication,
           and problem-solving.
@@ -92,9 +106,24 @@ export const About = () => {
         </motion.p>
       </motion.div>
 
-      <motion.div className={styles.techSkills} variants={fadeInLeft}>
-        <h2 className={styles.titleSkills}>Technical skills</h2>
-        <div className={styles.iconsContainer}>
+      <motion.div
+        className={styles.techSkills}
+        variants={fadeInLeft}
+        transition={{ duration: 0.6, delay: 0.9 }}
+      >
+        <motion.h2
+          className={styles.titleSkills}
+          variants={fadeInUp}
+          transition={{ duration: 0.5 }}
+        >
+          Technical skills
+        </motion.h2>
+        <motion.div
+          className={styles.iconsContainer}
+          variants={stagger}
+          initial="hidden"
+          animate="visible"
+        >
           {skills.map((skill, id) => {
             let IconComponent;
             if (skill.icon.startsWith("Fa")) {
@@ -103,15 +132,19 @@ export const About = () => {
               IconComponent = SiIcons[skill.icon];
             }
             return (
-              <figure key={id}>
+              <motion.figure
+                key={id}
+                variants={itemVariants}
+                transition={{ duration: 0.4, delay: id * 0.1 }}
+              >
                 <div className={styles.skillIcon}>
                   {IconComponent && <IconComponent className={styles.icon} />}
                   <p className={styles.skillName}>{skill.name}</p>
                 </div>
-              </figure>
+              </motion.figure>
             );
           })}
-        </div>
+        </motion.div>
       </motion.div>
     </motion.section>
   );

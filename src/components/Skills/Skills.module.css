@@ -15,35 +15,9 @@
   grid-template-columns: 40% 60%;
   grid-template-rows: max-content;
   grid-template-areas:
-    "techSkills experience"
+    "otherSkills experience"
     "otherSkills experience";
   position: relative;
-}
-
-.techSkills {
-  display: grid;
-  grid-area: techSkills;
-  row-gap: 1rem;
-  margin: 0 auto;
-}
-
-.iconsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.skillIcon {
-  margin: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.icon {
-  width: 2.3rem;
-  height: 2.3rem;
 }
 
 .experience {
@@ -94,7 +68,6 @@
   color: var(--color-accent4);
 }
 
-.techSkills,
 .experience,
 .otherSkills {
   border-radius: 25px;
@@ -105,7 +78,6 @@
   line-height: 2rem;
 }
 
-.techSkills::after,
 .experience::after,
 .otherSkills::after {
   content: "";
@@ -122,19 +94,9 @@
   .container {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "techSkills"
       "otherSkills"
       "experience";
     grid-row: max-content;
-  }
-
-  .skillIcon {
-    margin: 0.5rem;
-  }
-
-  .icon {
-    width: 1.5rem;
-    height: 1.5rem;
   }
 
   .ul {
@@ -150,8 +112,5 @@
 @media screen and (max-width: 600px) {
   .container {
     padding: 5rem 1rem 5rem;
-  }
-  .hobbies {
-    width: 100%;
   }
 }
