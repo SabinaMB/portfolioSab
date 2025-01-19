@@ -49,11 +49,6 @@ export const About = () => {
     threshold: 0.2,
   });
 
-  const { ref: goalsRef, inView: goalsInView } = useInView({
-    triggerOnce: true,
-    threshold: 0.2,
-  });
-
   return (
     <motion.section
       className={styles.container}
