@@ -83,10 +83,13 @@ export const GuessNrDetails = () => {
           <p>Technologies Used: </p>
           <p>
             <strong>HTML:</strong> Structured the layout of the game.
+            <br />
             <strong>CSS:</strong> Styled the game with hover effects,
             animations, and responsive design.
+            <br />
             <strong>JavaScript:</strong>Implemented game logic, event listeners,
             state management with reusable functions for modular code.
+            <br />
             <strong>Confetti.js:</strong> Added celebratory confetti animations
             to enhance the user experience.
           </p>
