@@ -13,7 +13,6 @@ import styles from "./About.module.css";
 import animation from "../../../assets/scroll.json";
 import lottie from "lottie-web";
 import { useInView } from "react-intersection-observer";
-
 import * as FaIcons from "react-icons/fa";
 import * as SiIcons from "react-icons/si";
 import skills from "../../data/skills.json";
@@ -60,18 +59,14 @@ export const About = () => {
       initial="hidden"
       animate={aboutMeInView ? "visible" : "hidden"}
     >
-      <motion.div
-        className={styles.titleContainer}
-        variants={fadeInDown}
-        transition={{ duration: 0.5 }}
-      >
+      <motion.div className={styles.titleContainer} variants={fadeInDown}>
         <p className={styles.title}>About me</p>
       </motion.div>
 
       <motion.div
         className={styles.lottieWrapper}
         variants={fadeInUp}
-        transition={{ duration: 0.5, delay: 0.3 }}
+        transition={{ delay: 0.3 }}
       >
         <div ref={containerRef} className={styles.lottieContainer}></div>
       </motion.div>
@@ -79,7 +74,7 @@ export const About = () => {
       <motion.div
         className={styles.bCamp}
         variants={fadeInLeft}
-        transition={{ duration: 0.5, delay: 0.5 }}
+        transition={{ delay: 0.5 }}
       >
         <p className={styles.bCamp_p}>
           I am a <strong>Web Developer</strong> passionate about{" "}
@@ -94,7 +89,7 @@ export const About = () => {
       <motion.div
         className={styles.path}
         variants={fadeInRight}
-        transition={{ duration: 0.5, delay: 0.7 }}
+        transition={{ delay: 0.7 }}
       >
         <motion.p className={styles.path_p}>
           With a background in Project Management and Quality Assurance, I bring
@@ -110,11 +105,7 @@ export const About = () => {
         variants={fadeInLeft}
         transition={{ duration: 0.6, delay: 0.9 }}
       >
-        <motion.h2
-          className={styles.titleSkills}
-          variants={fadeInUp}
-          transition={{ duration: 0.5 }}
-        >
+        <motion.h2 className={styles.titleSkills} variants={fadeInUp}>
           Technical skills
         </motion.h2>
         <motion.div
