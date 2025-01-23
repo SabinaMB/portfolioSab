@@ -101,9 +101,3 @@
 .close:hover {
   transform: scale(1.2);
 }
-
-/* @media (max-width: 800px) {
-  .overlay {
-    padding-right: 2rem;
-  }
-} */

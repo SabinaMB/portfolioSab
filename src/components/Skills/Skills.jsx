@@ -83,19 +83,28 @@ export const Skills = () => {
 
             <p className={styles.title2}>Academic Experience:</p>
             <p className={styles.details}>
-              At the Technical University "Gheorghe Asachi", I gained expertise
-              in project management and international collaboration.
+              At the Technical University "Gheorghe Asachi" I gained expertise
+              in coordinating academic projects, managing international student
+              affairs, and fostering collaborations across teams.
             </p>
-            <ul className={styles.ul}>
-              <li>
-                Contributed to four research projects, enhancing analytical
-                skills and solving complex challenges.
-              </li>
+            {/* <ul className={styles.ul}>
+              <li>Contributed to four research projects.</li>
               <li>
                 Organized four international conferences on quality management
                 and technological innovation.
               </li>
-            </ul>
+              <li>
+                Developed and implemented teaching quality management systems
+                across 12 faculties.
+              </li>
+            </ul> */}
+            <p className={styles.title2}>Industry Experience:</p>
+            <p className={styles.details}>
+              As an Engineer at S.C. Adesgo S.A., I was responsible for
+              overseeing prototype testing and ensuring production met required
+              standards, including leading the introduction of prototypes and
+              monitoring production processes for quality and accuracy.
+            </p>
           </div>
         </motion.div>
       </section>

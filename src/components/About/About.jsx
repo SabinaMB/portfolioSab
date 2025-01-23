@@ -96,7 +96,7 @@ export const About = () => {
           a wealth of experience in team collaboration, client communication,
           and problem-solving.
           <br /> My previous roles in academia and industry have equipped me
-          with skills that are highly relevant to this field.
+          with skills that are highly relevant to web development.
         </motion.p>
       </motion.div>
 

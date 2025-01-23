@@ -17,8 +17,8 @@ html {
   scroll-behavior: smooth;
   scroll-padding: 4rem;
   scroll-margin: 4rem;
-  overflow-x: hidden;
-  width: 100%;
+  /* overflow-x: hidden; */
+  /* width: 100%; */
 }
 
 ::-webkit-scrollbar {
