@@ -8,10 +8,12 @@ import {
 } from "../../variants";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
+import { Contact } from "../Contact/Contact";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -26,6 +28,9 @@ export const Navbar = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const openContact = () => setIsContactOpen(true);
+  const closeContact = () => setIsContactOpen(false);
 
   return (
     <div className={styles.navWrapper}>
@@ -81,7 +86,7 @@ export const Navbar = () => {
               </a>
             </motion.li>
             <motion.li variants={fadeInDownBurger}>
-              <a href="#contact" className={styles.navLink}>
+              <a onClick={openContact} className={styles.navLink}>
                 Contact
               </a>
             </motion.li>
@@ -120,6 +125,7 @@ export const Navbar = () => {
           </motion.ul>
         </div>
       </nav>
+      <Contact isOpen={isContactOpen} onClose={closeContact} />
     </div>
   );
 };

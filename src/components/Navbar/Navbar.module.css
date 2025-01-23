@@ -1,150 +1,137 @@
-@import '../../vars.css';
-
+@import "../../vars.css";
 
 .navWrapper {
-    background-color: var(--color-dark);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background-color: var(--color-dark);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-    margin: 0 auto;
-    max-width: 1500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1500px;
 }
 
 .navLink {
-    font-size: clamp(1rem, 3vw, 1.2rem);
-    font-weight: 600;
-    text-decoration: none;
-    position: relative;
-    background-color: none;
-    /* overflow: hidden; */
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  background-color: none;
+  cursor: pointer;
 }
 
 .navLink::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    height: 2px;
-    background-color: white;
-    width:0;
-    transition: width 0.5s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  background-color: white;
+  width: 0;
+  transition: width 0.5s ease;
 }
 
 .navLink:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .menuIcon {
-    display: none;
+  display: none;
 }
 
 .menu {
-    display: flex;
+  display: flex;
 }
 
 .menuItems {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    font-size: clamp(1rem, 3vw, 1.4rem);
-    border-radius: 20px;
-    position: relative;
-    top: auto;
-    right: auto;
-    flex-direction: row;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: clamp(1rem, 3vw, 1.4rem);
+  border-radius: 20px;
+  position: relative;
+  top: auto;
+  right: auto;
+  flex-direction: row;
 }
 
 .dropdownCV {
-    position: relative;
-    
-  }
-  
-  .dropdownCV:hover .CV {
-    display: block;
-    color: var(--color-accent4);
-    transition: color 0.5s;
-  }
-
-  .CV {
-    display: none;
-    position: absolute;
-    left: 50%;
-    z-index: 10;
-    transform: translateX(-50%);
-    width: max-content;
-   
-  }
-
-  .cvContent {
-    display: block;
-    text-decoration: none;
-    
-    left: 50%;
-    z-index: 10;
-    transform: translateX(-50%);
-    width: max-content;
-        
-  }
-
-  .navLink:hover + .CV {
-    display: block;
+  position: relative;
 }
 
-  .cvContent:hover {
-    color: var(--color-accent4);
-    transition: color 0.5s;
-    text-decoration: none;
+.dropdownCV:hover .CV {
+  display: block;
+  color: var(--color-accent4);
+  transition: color 0.5s;
 }
 
+.CV {
+  display: none;
+  position: absolute;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+  width: max-content;
+}
 
+.cvContent {
+  display: block;
+  text-decoration: none;
 
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+  width: max-content;
+}
 
+.navLink:hover + .CV {
+  display: block;
+}
 
-
+.cvContent:hover {
+  color: var(--color-accent4);
+  transition: color 0.5s;
+  text-decoration: none;
+}
 
 @media screen and (max-width: 780px) {
-    
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .menu {
+    position: absolute;
+    right: 0;
+    margin-right: 5%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    z-index: 3;
+  }
 
-    .menu {
-        position: absolute;
-        right: 0;
-        margin-right: 5%;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 0.5rem;
-        z-index: 3;
-    }
+  .menuIcon {
+    display: block;
+    cursor: pointer;
+  }
 
-    .menuIcon {
-        display: block;
-        cursor: pointer;
-    }
-
-    .menuItems {
+  .menuItems {
     display: none;
-    position:absolute;
+    position: absolute;
     flex-direction: column;
     align-items: center;
     top: 100%;
     right: 5%;
     gap: 0.5rem;
     width: max-content;
-    }
+  }
 
-    .menuOpen {
-        display: flex;
-        z-index: 1;
-    }
-
+  .menuOpen {
+    display: flex;
+    z-index: 1;
+  }
 }

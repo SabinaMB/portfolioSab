@@ -1,43 +1,45 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./Contact.module.css";
 import { motion } from "framer-motion";
+import { modalVariants } from "../../variants";
+import { FaEnvelope, FaLinkedin, FaTimes } from "react-icons/fa"; // Font Awesome Icons
 
-const linkVariants = {
-  hidden: { opacity: 0, y: 100 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 1, ease: "easeOut" },
-  },
-};
+export const Contact = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
 
-export const Contact = () => {
   return (
-    <section className={styles.container} id="contact">
-      <div className={styles.contact}>
-        <motion.a
-          href="mailto:sabina_marian@yahoo.com"
-          className={styles.link}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={linkVariants}
-        >
-          Email me
-        </motion.a>
-        <motion.a
-          href="https://www.linkedin.com/in/sabina-marian-blanariu-3276a3144/"
-          target="_blank"
-          rel="noreferrer"
-          className={styles.link}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={linkVariants}
-        >
-          Connect with me on LinkedIn
-        </motion.a>
-      </div>
-    </section>
+    <div className={styles.overlay} onClick={onClose}>
+      <motion.div
+        className={styles.modal}
+        variants={modalVariants}
+        initial="hidden"
+        animate="visible"
+        exit="hidden"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Icons Section */}
+        <div className={styles.icons}>
+          {/* Email Icon */}
+          <a href="mailto:sabina_marian@yahoo.com" className={styles.icon}>
+            <FaEnvelope />
+          </a>
+
+          {/* LinkedIn Icon */}
+          <a
+            href="https://linkedin.com"
+            className={styles.icon}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
+
+        {/* Close Button */}
+        <button className={styles.close} onClick={onClose}>
+          <FaTimes />
+        </button>
+      </motion.div>
+    </div>
   );
 };

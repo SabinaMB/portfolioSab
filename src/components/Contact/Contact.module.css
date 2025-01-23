@@ -1,56 +1,59 @@
 @import "../../vars.css";
 
-.container {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-dark2);
-  background-image: url(../../../assets/contact8.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: inset 0 0 0 2000px rgba(28, 28, 28, 0.8);
-}
-
-.link {
-  font-size: 3ch;
-  letter-spacing: 0.15ch;
-  font-weight: 600;
-  font-family: var(--font-oswald);
-  color: var(--color-accent4);
-  margin-top: 1.5rem;
-  padding: 0.3rem;
-  border-radius: 10px;
-  text-decoration: none;
-  position: relative;
-  background-color: none;
-  position: relative;
-  /* overflow: hidden; */
-  z-index: 1;
-}
-
-.link::after {
-  content: "";
-  position: absolute;
+.overlay {
+  position: fixed;
+  top: 0;
   left: 0;
-  bottom: -2px;
-  height: 2px;
-  background-color: var(--color-accent4);
-  width: 0;
-  transition: width 0.5s ease;
-}
-
-.link:hover::after {
-  width: 100%;
-}
-
-.contact {
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 1rem;
-  /* padding-top: 20rem; */
+  align-items: center;
+}
+
+.modal {
+  background: var(--color-dark2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.icon {
+  font-size: 36px; /* Icon size */
+  background: #0077b5; /* Default color */
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2); /* Enlarge on hover */
+  background: #8a0061; /* Change color on hover */
+}
+
+.close {
+  position: absolute;
+  /* top: 10px;
+  right: 10px; */
+  background: transparent;
+  border: none;
+  color: #da1a1a;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.close:hover {
+  transform: scale(1.2);
+  color: #005f8a;
 }
