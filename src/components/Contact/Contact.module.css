@@ -3,57 +3,100 @@
 .overlay {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  box-shadow: inset 0 0 0 2000px rgba(28, 28, 28, 0.75);
+  padding-top: 5rem;
+  padding-right: 4rem;
+
   z-index: 1000;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .modal {
-  background: var(--color-dark2);
-  padding: 20px;
+  background: #022b46;
+  padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
-  text-align: center;
+  box-shadow: 0 1px 10px rgba(101, 100, 100, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
 }
 
 .icons {
   display: flex;
+  position: relative;
   justify-content: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  align-items: center;
+  gap: 4rem;
+  width: 20rem;
+  height: 10rem;
+}
+
+.iconWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tooltipText {
+  visibility: hidden;
+  width: max-content;
+  color: grey;
+  text-align: center;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.tooltipMessage {
+  display: block;
+  color: grey;
+  text-decoration: none;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
 }
 
 .icon {
-  font-size: 36px; /* Icon size */
-  background: #0077b5; /* Default color */
-  transition: transform 0.3s, color 0.3s;
+  transition: transform 0.3s;
 }
 
 .icon:hover {
-  transform: scale(1.2); /* Enlarge on hover */
-  background: #8a0061; /* Change color on hover */
+  transform: scale(1.2);
+}
+
+.icon svg {
+  font-size: 2.5rem;
 }
 
 .close {
   position: absolute;
-  /* top: 10px;
-  right: 10px; */
+  top: 0.1rem;
+  right: 0.1rem;
   background: transparent;
   border: none;
-  color: #da1a1a;
-  font-size: 24px;
   cursor: pointer;
-  transition: color 0.3s, transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .close:hover {
   transform: scale(1.2);
-  color: #005f8a;
 }
