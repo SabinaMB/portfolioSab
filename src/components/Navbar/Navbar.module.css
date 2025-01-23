@@ -117,6 +117,7 @@
   .menuIcon {
     display: block;
     cursor: pointer;
+    width: 2.5rem;
   }
 
   .menuItems {
@@ -128,6 +129,8 @@
     right: 5%;
     gap: 0.5rem;
     width: max-content;
+    backdrop-filter: blur(2px);
+    z-index: 1000;
   }
 
   .menuOpen {

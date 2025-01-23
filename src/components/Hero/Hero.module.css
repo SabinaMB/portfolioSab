@@ -42,7 +42,7 @@
   object-fit: cover;
   overflow: hidden;
   border-radius: 50%;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
 }
 
 .name {
@@ -129,5 +129,16 @@
     margin-left: 0;
     width: 5rem;
     height: 5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 1rem;
+    min-height: 40rem;
+  }
+
+  .header {
+    padding: 1rem;
   }
 }
