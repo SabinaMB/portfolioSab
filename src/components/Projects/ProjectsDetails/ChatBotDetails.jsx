@@ -90,6 +90,8 @@ export const ChatBotDetails = () => {
             <br />
             uuid (for unique identifiers to track user sessions and
             interactions)
+            <br />
+            The StartPage image was created using AI tools.
           </p>
           <p className={styles.gitHub}>
             GitHub Repository:{" "}
