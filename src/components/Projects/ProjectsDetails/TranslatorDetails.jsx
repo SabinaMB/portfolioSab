@@ -45,33 +45,34 @@ export const TranslatorDetails = () => {
             </video>
           </figure>
           <div className={styles.imgDescription}>
-            <p>
-              <span>
-                <strong>Language Selection</strong>: Select "From" and "To"
-                languages from a dropdown with alphabet-based filtering for easy
-                navigation.
-                <br />
-                Dropdown closes when clicking outside, using useRef and
-                useEffect.
-              </span>
-              <span>
-                <strong>Input & Translation</strong>: Input up to 200 characters
-                with a live character counter; translations appear after
-                clicking translate or pressing Enter.
-              </span>
-              <span>
-                <strong>Language Swapping</strong>: Quick one-click swap between
-                selected languages.
-              </span>
-              <span>
-                <strong>Filtered Search</strong>: Filter languages by initial
-                letter and reset to show all.
-              </span>
-              <span>
-                <strong>Responsive design</strong>: Fully responsive on various
-                screen sizes.
-              </span>
-            </p>
+            <div>
+              <ul className={styles.description}>
+                <li>
+                  <strong>Language Selection</strong>: Select languages from a
+                  dropdown with alphabet-based filtering for easy navigation.
+                  <br />
+                  Dropdown closes when clicking outside, using useRef and
+                  useEffect.
+                </li>
+                <li>
+                  <strong>Input & Translation</strong>: Input up to 200
+                  characters with a live character counter; translations appear
+                  after clicking translate or pressing Enter.
+                </li>
+                <li>
+                  <strong>Language Swapping</strong>: Quick one-click swap
+                  between selected languages.
+                </li>
+                <li>
+                  <strong>Filtered Search</strong>: Filter languages by initial
+                  letter and reset to show all.
+                </li>
+                <li>
+                  <strong>Responsive design</strong>: Fully responsive on
+                  various screen sizes.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
