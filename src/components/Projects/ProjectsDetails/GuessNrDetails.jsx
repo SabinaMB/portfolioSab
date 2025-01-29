@@ -43,7 +43,7 @@ export const GuessNrDetails = () => {
               controls
               alt="playing the number guessing game"
             >
-              <source src={getImageUrl("GuessNr/rec2.mp4")} type="video/mp4" />
+              <source src={getImageUrl("GuessNr/rec.mp4")} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </figure>
@@ -68,7 +68,7 @@ export const GuessNrDetails = () => {
                 during the session is saved.
               </span>
               <span>
-                <strong>Responsive Restart:</strong>: Easily restart the game,
+                <strong>Responsive Restart</strong>: Easily restart the game,
                 retaining the high score.
               </span>
               <span>
