@@ -1,5 +1,15 @@
 [
   {
+    "title": "quickTranslate",
+    "imageSrc": "Translator/translatorImg.png",
+    "description": [
+      "A dynamic language translation tool built with React and Tailwind."
+    ],
+    "readMoreLink": "/quick-translate-details",
+    "visible": true
+  },
+
+  {
     "title": "guess.Number",
     "imageSrc": "GuessNr/nrGuess11.png",
     "description": [
