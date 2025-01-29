@@ -1,9 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./GuessNrDetails.module.css";
+import styles from "./TranslatorDetails.module.css";
 import { getImageUrl } from "../../../utils";
 
-export const GuessNrDetails = () => {
+export const TranslatorDetails = () => {
   const navigate = useNavigate();
   const handleGoBack = () => {
     navigate(-1);
@@ -11,65 +11,61 @@ export const GuessNrDetails = () => {
   return (
     <div className={styles.container}>
       <div className={styles.nameWrapper}>
-        <p className={styles.name}>guess.Number</p>
+        <p className={styles.name}>quickTranslate</p>
       </div>
       <div className={styles.projectWrapper}>
         <div className={styles.projectDescription}>
-          <p className={styles.title}>Why I build guess.Number?</p>
+          <p className={styles.title}>Why I build quickTranslate?</p>
           <p>
             <span>
-              <strong>Strengthening Foundations</strong>: Refreshing my
-              JavaScript skills with core concepts like DOM manipulation, event
-              handling, and game logic to build a stronger foundation for future
-              projects.
+              <strong>Strengthening React & Tailwind Skills</strong>: Practicing
+              state management, event handling, and styling with Tailwind to
+              build a solid foundation.
             </span>
             <span>
-              <strong>Framework Independence</strong>: Creating the game with
-              vanilla JavaScript to focus on mastering the basics and improving
-              my understanding of web development without relying on frameworks.
+              <strong>Hands-on API Interaction</strong>: Working with a
+              translation API to improve my skills in data fetching and
+              asynchronous operations.
             </span>
             <span>
-              <strong>Enjoyable Learning Experience</strong>: Building a simple,
-              fun project that keeps me engaged while refining essential coding
-              skills.
+              <strong>UI/UX Focus:</strong> Designing a responsive, intuitive
+              interface with a focus on simplicity and user-friendliness.
             </span>
           </p>
         </div>
 
         <div className={styles.imgWrapper}>
           <figure>
-            <video
-              className={styles.img}
-              controls
-              alt="playing the number guessing game"
-            >
-              <source src={getImageUrl("GuessNr/rec.mp4")} type="video/mp4" />
+            <video className={styles.img} controls alt="using quickTranslate">
+              <source
+                src={getImageUrl("Translator/rec.mp4")}
+                type="video/mp4"
+              />
               Your browser does not support the video tag.
             </video>
           </figure>
           <div className={styles.imgDescription}>
             <p>
               <span>
-                <strong>Interactive Gameplay</strong>: Guess a secret number
-                between 1 and 20.
-                <br /> Feedback is given based on the guess: "Too high," "Too
-                low," or "Correct!".
-              </span>
-              <span>
-                <strong>Dynamic UI Updates</strong>: Background color changes on
-                correct guesses.
+                <strong>Language Selection</strong>: Select "From" and "To"
+                languages from a dropdown with alphabet-based filtering for easy
+                navigation.
                 <br />
-                Scores update live.
-                <br />
-                Confetti animation celebrates a win.
+                Dropdown closes when clicking outside, using useRef and
+                useEffect.
               </span>
               <span>
-                <strong>High Score Tracking</strong>: The highest score achieved
-                during the session is saved.
+                <strong>Input & Translation</strong>: Input up to 200 characters
+                with a live character counter; translations appear after
+                clicking translate or pressing Enter.
               </span>
               <span>
-                <strong>Responsive Restart</strong>: Easily restart the game,
-                retaining the high score.
+                <strong>Language Swapping</strong>: Quick one-click swap between
+                selected languages.
+              </span>
+              <span>
+                <strong>Filtered Search</strong>: Filter languages by initial
+                letter and reset to show all.
               </span>
               <span>
                 <strong>Responsive design</strong>: Fully responsive on various
@@ -80,43 +76,52 @@ export const GuessNrDetails = () => {
         </div>
 
         <div className={styles.info}>
-          <p>Technologies Used: </p>
-          <p>
-            <strong>HTML:</strong> Structured the layout of the game.
-            <br />
-            <strong>CSS:</strong> Styled the game with hover effects,
-            animations, and responsive design.
-            <br />
-            <strong>JavaScript:</strong>Implemented game logic, event listeners,
-            state management with reusable functions for modular code.
-            <br />
-            <strong>Confetti.js:</strong> Added celebratory confetti animations
-            to enhance the user experience.
-          </p>
-          <p className={styles.gitHub}>
+          <div>
+            <p>
+              <strong>Technologies Used:</strong>
+            </p>
+            <ul className={styles.techList}>
+              <li>
+                <strong>HTML:</strong> Structured app layout.
+              </li>
+              <li>
+                <strong>Tailwind CSS:</strong> Styled the app with responsive,
+                utility-first design.
+              </li>
+              <li>
+                <strong>React JS:</strong> Managed state, events, and API calls,
+                using hooks for dynamic UI.
+              </li>
+              <li>
+                <strong>API (MyMemory Translation):</strong> Integrated
+                translation API for fetching translations.
+              </li>
+            </ul>
+          </div>
+          <div className={styles.gitHub}>
             GitHub Repository:{" "}
             <a
-              href="https://github.com/SabinaMB/guessNumber"
+              href="https://github.com/SabinaMB/translatorApp"
               target="_blank"
               rel="noreferrer"
             >
-              guess.Number
+              quickTranslate
             </a>
-          </p>
-          <p className={styles.liveApp}>
+          </div>
+          <div className={styles.liveApp}>
             Live Application:{" "}
             <a
-              href="https://nr-guessing.netlify.app/"
+              href="https://quick-translate.netlify.app//"
               target="_blank"
               rel="noreferrer"
             >
-              guess.Number
+              quickTranslate
             </a>
-          </p>
-          <button className={styles.button} onClick={handleGoBack}>
-            Go Back
-          </button>
+          </div>
         </div>
+        <button className={styles.button} onClick={handleGoBack}>
+          Go Back
+        </button>
       </div>
     </div>
   );

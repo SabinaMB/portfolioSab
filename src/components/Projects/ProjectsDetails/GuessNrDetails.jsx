@@ -87,8 +87,9 @@ export const GuessNrDetails = () => {
             <strong>CSS:</strong> Styled the game with hover effects,
             animations, and responsive design.
             <br />
-            <strong>JavaScript:</strong>Implemented game logic, event listeners,
-            state management with reusable functions for modular code.
+            <strong>JavaScript:</strong> Implemented game logic, event
+            listeners, state management with reusable functions for modular
+            code.
             <br />
             <strong>Confetti.js:</strong> Added celebratory confetti animations
             to enhance the user experience.
