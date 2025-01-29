@@ -48,53 +48,56 @@ export const GuessNrDetails = () => {
             </video>
           </figure>
           <div className={styles.imgDescription}>
-            <p>
-              <span>
-                <strong>Interactive Gameplay</strong>: Guess a secret number
-                between 1 and 20.
-                <br /> Feedback is given based on the guess: "Too high," "Too
-                low," or "Correct!".
-              </span>
-              <span>
-                <strong>Dynamic UI Updates</strong>: Background color changes on
-                correct guesses.
-                <br />
-                Scores update live.
-                <br />
-                Confetti animation celebrates a win.
-              </span>
-              <span>
-                <strong>High Score Tracking</strong>: The highest score achieved
-                during the session is saved.
-              </span>
-              <span>
-                <strong>Responsive Restart</strong>: Easily restart the game,
-                retaining the high score.
-              </span>
-              <span>
-                <strong>Responsive design</strong>: Fully responsive on various
-                screen sizes.
-              </span>
-            </p>
+            <ul className={styles.description}>
+              <li>
+                <strong>Interactive Gameplay</strong>: Guess a number (1-20)
+                with feedback ("Too high," "Too low," "Correct!").
+              </li>
+              <li>
+                <strong>Dynamic UI</strong>: Background changes on correct
+                guesses, live score updates, and confetti on wins.
+              </li>
+              <li>
+                <strong>High Score Tracking</strong>: Saves the highest session
+                score.
+              </li>
+              <li>
+                <strong>Easy Restart</strong>: Restart while keeping the high
+                score.
+              </li>
+              <li>
+                <strong>Responsive Design</strong>: Optimized for all screen
+                sizes.
+              </li>
+            </ul>
           </div>
         </div>
 
         <div className={styles.info}>
-          <p>Technologies Used: </p>
-          <p>
-            <strong>HTML:</strong> Structured the layout of the game.
-            <br />
-            <strong>CSS:</strong> Styled the game with hover effects,
-            animations, and responsive design.
-            <br />
-            <strong>JavaScript:</strong> Implemented game logic, event
-            listeners, state management with reusable functions for modular
-            code.
-            <br />
-            <strong>Confetti.js:</strong> Added celebratory confetti animations
-            to enhance the user experience.
-          </p>
-          <p className={styles.gitHub}>
+          <div>
+            <p>
+              <strong>Technologies Used:</strong>
+            </p>
+            <ul className={styles.techList}>
+              <li>
+                <strong>HTML:</strong> Structured the layout of the game.
+              </li>
+              <li>
+                <strong>CSS:</strong> Styled the game with hover effects,
+                animations, and responsive design.
+              </li>
+              <li>
+                <strong>JavaScript:</strong> Implemented game logic, event
+                listeners, state management with reusable functions for modular
+                code.
+              </li>
+              <li>
+                <strong>Confetti.js:</strong> Added celebratory confetti
+                animations to enhance the user experience.
+              </li>
+            </ul>
+          </div>
+          <div className={styles.gitHub}>
             GitHub Repository:{" "}
             <a
               href="https://github.com/SabinaMB/guessNumber"
@@ -103,8 +106,8 @@ export const GuessNrDetails = () => {
             >
               guess.Number
             </a>
-          </p>
-          <p className={styles.liveApp}>
+          </div>
+          <div className={styles.liveApp}>
             Live Application:{" "}
             <a
               href="https://nr-guessing.netlify.app/"
@@ -113,11 +116,11 @@ export const GuessNrDetails = () => {
             >
               guess.Number
             </a>
-          </p>
-          <button className={styles.button} onClick={handleGoBack}>
-            Go Back
-          </button>
+          </div>
         </div>
+        <button className={styles.button} onClick={handleGoBack}>
+          Go Back
+        </button>
       </div>
     </div>
   );
