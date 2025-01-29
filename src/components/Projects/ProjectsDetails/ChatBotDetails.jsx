@@ -81,19 +81,24 @@ export const ChatBotDetails = () => {
         </div>
 
         <div className={styles.info}>
-          <p>Technologies Used: </p>
-          <p>
-            React, Framer Motion, Vite, OpenAI API
-            <br />
-            @emoji-mart/react (for easy integration of emoji support in the chat
-            interface)
-            <br />
-            uuid (for unique identifiers to track user sessions and
-            interactions)
-            <br />
-            The StartPage image was created using AI tools.
-          </p>
-          <p className={styles.gitHub}>
+          <div>
+            <p>
+              <strong>Technologies Used:</strong>
+            </p>
+            <ul className={styles.techList}>
+              <li>React, Framer Motion, Vite, OpenAI API</li>
+              <li>
+                @emoji-mart/react (for easy integration of emoji support in the
+                chat interface)
+              </li>
+              <li>
+                uuid (for unique identifiers to track user sessions and
+                interactions)
+              </li>
+              <li>The StartPage image was created using AI tools.</li>
+            </ul>
+          </div>
+          <div className={styles.gitHub}>
             GitHub Repository:{" "}
             <a
               href="https://github.com/SabinaMB/chatBot"
@@ -102,8 +107,9 @@ export const ChatBotDetails = () => {
             >
               Chat.Bot
             </a>
-          </p>
-          <p className={styles.liveApp}>
+          </div>
+
+          <div className={styles.liveApp}>
             Live Application:{" "}
             <a
               href="https://chat-bot-s.netlify.app/"
@@ -112,11 +118,11 @@ export const ChatBotDetails = () => {
             >
               Chat.Bot
             </a>
-          </p>
-          <button className={styles.button} onClick={handleGoBack}>
-            Go Back
-          </button>
+          </div>
         </div>
+        <button className={styles.button} onClick={handleGoBack}>
+          Go Back
+        </button>
       </div>
     </div>
   );
