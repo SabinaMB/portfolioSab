@@ -1,8 +1,18 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with modern web technologies.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Frontend framework for building interactive UI components.
+- **Lottie-web**: Used for incorporating smooth animations.
+- **Framer Motion**: Implemented motion effects for an engaging experience.
+- **Vite**: Utilized for fast development and optimized builds.
+- **AI-Generated Hero Background**: The background image of the Hero section was created using AI tools.
+- **Smooth Animations**: Integrated Lottie animations and Framer Motion to enhance visual appeal.
+
+My portfolio is a work in progress, with plans to add new projects and features while continually improving its design and functionality.
+
+## Live Application
+
+https://portfolio-sabina.netlify.app/
