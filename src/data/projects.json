@@ -1,5 +1,15 @@
 [
   {
+    "title": "CupStore",
+    "imageSrc": "CupStore/HomePage.png",
+    "description": [
+      "CupStore is a stylish web application for browsing and purchasing coffee and tea cups.",
+      "Built with React and Vite, this project features a smooth, responsive user experience with a sleek, minimalist aesthetic."
+    ],
+    "readMoreLink": "/CupStore-details",
+    "visible": true
+  },
+  {
     "title": "quickTranslate",
     "imageSrc": "Translator/translatorImg.png",
     "description": [
