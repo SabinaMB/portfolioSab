@@ -13,69 +13,102 @@ export const CupStoreDetails = () => {
     <div className={styles.container}>
       <div className={styles.nameWrapper}>
         <p className={styles.name}>
-          <span className={styles.spanName}>Chat.Bot:</span> a seamless user
-          experience
+          <span className={styles.spanName}>CupStore: </span>where style meets
+          convenience
         </p>
       </div>
       <div className={styles.projectWrapper}>
         <div className={styles.projectDescription}>
-          <p className={styles.title}>Why Choose Chat.Bot?</p>
+          <p className={styles.title}>Why Choose CupStore?</p>
           <p>
             <span>
-              <strong>User-Friendly Design</strong>: The app follows a simple
-              and minimalistic approach, making it easy to use for anyone.
+              <strong>AI-Generated Products</strong>: All cups designs are
+              created by AI and hosted on Cloudinary.
             </span>
             <span>
-              <strong>OpenAI-Powered Responses</strong>: By leveraging the
-              OpenAI API, the chatbot delivers intelligent and context-aware
-              responses.
+              <strong>Seamless Shopping Experience</strong>: Add, remove or
+              clear items from the shopping cart with ease.
             </span>
             <span>
-              <strong>Responsive Layout</strong>: Designed to work well across
-              devices, the app adapts to desktop, tablet, and mobile screens,
-              providing a consistent experience regardless of your device.
+              <strong>Persistent Cart State</strong>: Your cart items are saved
+              in Local Storage, so nothing gets lost if you refresh or leave the
+              page.
+            </span>
+            <span>
+              <strong>Responsive Layout</strong>: The app adapts beautifully to
+              desktop, tablet and mobile screens for a consistent shopping
+              experience.
+            </span>
+            <span>
+              LogIn functionality is on the way, enhancing personalization and
+              order history tracking.
             </span>
           </p>
         </div>
 
         <div className={styles.imgWrapper}>
+          <div className={styles.videoWrapper}>
+            <figure>
+              <video className={styles.video} controls alt="using CupStore">
+                <source
+                  src={getImageUrl("CupStore/Rec.mp4")}
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </figure>
+            <div className={styles.videoDescription}>
+              <ul className={styles.description}>
+                <li>
+                  <strong>Demo video</strong>: A short walkthrough highlighting
+                  the main features — browsing products, adding, removing
+                  products, clearing the shopping cart.
+                </li>
+              </ul>
+            </div>
+          </div>
           <figure>
             <img
-              src={getImageUrl("ChatBot/chatBotStart2.png")}
+              src={getImageUrl("CupStore/HomePage.png")}
               className={styles.img}
-              alt="Chat.Bot starting page"
-            />
-          </figure>
-
-          <figure>
-            <img
-              src={getImageUrl("ChatBot/chatWind11.png")}
-              className={styles.img}
-              alt="Chat.Bot chatting page on big screens"
+              alt="CupStore home page on large screens"
             />
             <figcaption className={styles.imgDescription}>
-              A full-screen layout showing the chatbot's clean and simple
-              design.
+              Home page on large screens.
             </figcaption>
           </figure>
 
           <figure>
             <img
-              src={getImageUrl("ChatBot/chatWind22.png")}
+              src={getImageUrl("CupStore/ProductCatalog2.png")}
               className={styles.img}
-              alt="Chat.Bot chatting page with emojis"
+              alt="ProductsCatalog on large screens"
             />
+            <figcaption className={styles.imgDescription}>
+              Products Catalog on large screens showcasing available products
+              and the ShoppingCart.
+            </figcaption>
           </figure>
 
           <figure>
             <img
-              src={getImageUrl("ChatBot/chatWind33.png")}
+              src={getImageUrl("CupStore/HomePagePhone.png")}
               className={styles.imgV}
-              alt="Chat.Bot on small screens"
+              alt="CupStore home page on small screens"
             />
             <figcaption className={styles.imgDescription}>
-              A compact, vertical interface designed for smaller screens and
-              on-the-go usage.
+              Home page on small screens.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src={getImageUrl("CupStore/ProductCatalogPhone.png")}
+              className={styles.imgV}
+              alt="CupStore home page on small screens"
+            />
+            <figcaption className={styles.imgDescription}>
+              Product Catalog on small screens ensuring easy product browsing.
             </figcaption>
           </figure>
         </div>
@@ -86,37 +119,35 @@ export const CupStoreDetails = () => {
               <strong>Technologies Used:</strong>
             </p>
             <ul className={styles.techList}>
-              <li>React, Framer Motion, Vite, OpenAI API</li>
+              <li>React, React Context, Vite, CSS Modules</li>
+
+              <li>Lucide React (crisp and customizable icons)</li>
               <li>
-                @emoji-mart/react (for easy integration of emoji support in the
-                chat interface)
+                The StartPage image and all cups design were created using AI
+                tools.
               </li>
-              <li>
-                uuid (for unique identifiers to track user sessions and
-                interactions)
-              </li>
-              <li>The StartPage image was created using AI tools.</li>
+              <li>Cloudinary (for hosting and delivering product images)</li>
             </ul>
           </div>
           <div className={styles.gitHub}>
             GitHub Repository:{" "}
             <a
-              href="https://github.com/SabinaMB/chatBot"
+              href="https://github.com/SabinaMB/CupStore"
               target="_blank"
               rel="noreferrer"
             >
-              Chat.Bot
+              CupStore
             </a>
           </div>
 
           <div className={styles.liveApp}>
             Live Application:{" "}
             <a
-              href="https://chat-bot-s.netlify.app/"
+              href="https://cup-store.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
-              Chat.Bot
+              CupStore
             </a>
           </div>
         </div>
