@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import App from "./App.jsx";
+import { CupStoreDetails } from "./components/Projects/ProjectsDetails/CupStoreDetails";
 import { TranslatorDetails } from "./components/Projects/ProjectsDetails/TranslatorDetails";
 import { GuessNrDetails } from "./components/Projects/ProjectsDetails/GuessNrDetails";
 import { ChatBotDetails } from "./components/Projects/ProjectsDetails/ChatBotDetails";
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Router>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/CupStore-details" element={<CupStoreDetails />} />
         <Route path="/number-guessing-details" element={<GuessNrDetails />} />
         <Route path="/translator-details" element={<TranslatorDetails />} />
         <Route path="/chat-bot-details" element={<ChatBotDetails />} />

@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "../ProjectsDetails/";
+import styles from "./CupStoreDetails.module.css";
 import { getImageUrl } from "../../../utils";
 
 export const CupStoreDetails = () => {
